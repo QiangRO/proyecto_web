@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(32, 44, 58);
+    height: 730px;
+}
+/**HEADER**/
+.carrusel{
+    width: 100%;
+    height: auto;
+}
+.banner-text{
+    background: rgba(168, 15, 120, 0.842);
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10em;
+    margin-left: 30%;
+    
+    z-index: 90;
+}
+.banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#letradorada{
+    color: #efb810;
+}
+/**--HEADER**/
+
+/**FIN img header**/
+section {
+    min-width: 1000px;
+    margin: auto;
+    padding: 30px 0;
+}
+section h1 {
+    font-size: 25px; /*tamaño de letra*/
+    padding-left: 15px;
+}
+
+.conte {
+    text-align: center;
+}
+.conte p {
+    font-size: 100px; /*tamaño de letra*/
+    font-weight: bold; /*Fuente*/
+    margin-top: 200px;
+}
+.conte h2 {
+    font-size: 20px; /*tamaño de letra*/
+    font-weight: bold; /*Fuente*/
+    margin: 0.5em 0; /*margin hacia los costados*/
+}
+.conte a {
+    color: white; 
+    text-decoration: none;
+    padding:20px;
+    border-radius: 20px;
+    font-size: 50px;
+    margin: 10px;
+    padding: 0rem;
+    transition:all .9s ease;
+}
+.conte a :hover{
+    transform:scale(1.10);
+}
+/** FIN HEADER**/
+/**BARRA DE NAVEGACION**/
+.navbar {
+    background: #202c3a;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar a {
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	transition: .3s ease-out all;
+}
+
+.navbar a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.contenedor-nav {
+	max-width: 1300px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+/**Boton Neon NAV**/
+
+.btn-neon {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon:hover{
+    background: rgb(215, 122, 91);
+    box-shadow: 0 0 10px rgb(215, 122, 91), 0 0 40px rgb(215, 122, 91), 0 0 80px rgb(215, 122, 91);
+    /*transition-delay: 1s;   /**borrame**/
+}
+    
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+    
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,rgb(215, 122, 91));
+}
+/**Boton Neon TITULO**/
+.btn-neon-title {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn-neon-title:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;   /**borrame**/
+}
+    
+.btn-neon-title span {
+    position: absolute;
+    display: block;
+}
+    
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#a945c7);
+}
+    
+.btn-neon-title:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+    
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#a945c7);
+}
+    
+.btn-neon-title:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+    
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+    
+.btn-neon-title:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+        
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+    
+.btn-neon-title:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+/**BARRA LATERAL___ASIDE**/
+.container-nav-header{
+    
+    position: fixed;
+    top: 0px;
+    left: 20px;
+}
+.nar-lateral-flotante{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.logo{
+    height: 45px;
+    width: 225px;
+    margin-left: 20px;
+}
+.bar-btn{
+    font-size: 25px;
+    width: auto;
+    color: rgb(215, 122, 91);
+    margin-top: 0px;
+    cursor: pointer;
+}
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0,0,0,.95);
+    text-align: left;
+    transition: all .5s;
+}
+.nav-menu li{
+    display: none;
+    line-height: 10px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: rgba(255, 176, 85, 0.952);
+    transition: .3s;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+/**FIN ASIDE**/
+/**BOTON-FLOTANTE**/
+#btn-mas{
+    display: none;
+}
+.container-btn-flotante{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.btn-mas a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: rgb(3, 197, 68);
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+.redessociales a:hover{
+    background: #fff;
+    color: #cc2b2b;
+}
+.redessociales a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-mas:checked~ .redessociales a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    background: #f44141;
+    font-size: 23px;
+}
+#btn-mas:checked ~ .btn-mas label{
+    transform: rotate(135deg);
+    font-size: 25px;
+}
+/**-->BOTON-FLOTANTE**/

@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.registrar/*Tamaño del formulario,color , todas las caracteristicas del formulario.etc */
+{
+    width: 400px;
+    background-color:rgb(9, 9, 78);
+    padding: 30px;
+    margin: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    box-shadow: blue;
+}
+.registrar h4 /*el titulo que va al medio*/
+{
+    font-size: 22px;
+    margin-bottom: 20px;   
+}
+.controls/*los inputs donde se llena la informacion*/
+{
+    width: 100%;
+    background:lightcyan;
+    padding: 10px;
+    border-radius: 4px;
+    border: 3px solid burlywood;
+    margin-bottom:14px ;
+    font-size: 12px;
+    color: black;
+}
+.registrar p/*las etiquetas p*/
+{
+    height: 40px;
+    text-align:center ;
+    font-size: 12px;
+}
+
+.registrar .boton/*el boton */
+{
+    width: 100%; 
+    background-color:navy ; 
+    border-radius:2px ;
+    padding: 10px;
+    font-size: 16px;
+    cursor:pointer;
+
+}
+body/*imagen de fondo*/
+{
+    background-image:url(../img_body/fondoh.jpg) ;
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

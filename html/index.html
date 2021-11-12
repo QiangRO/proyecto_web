@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencias</title>
+    <!--? Estilos externos-->
+    <link rel="stylesheet" href="../css/proyecto.css">
+    <link rel="stylesheet" href="../css/estilosfooter.css">
+    <link rel="stylesheet" href="../css/body.css">
+
+    <!--? Iconos-->
+    <script src="https://kit.fontawesome.com/e9304c4661.js" crossorigin="anonymous"></script>
+
+    <!--? Fuentes-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Livvic:wght@200;300&family=Slabo+27px&family=Titillium+Web:wght@600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,300;0,400;0,800;1,100&display=swap"
+        rel="stylesheet">
+
+    <!--? Librerias-->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!--? Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--? Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="contenedor-nav">
+                <a href="../html/index.html" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    INICIO
+                </a>
+                <a href="#" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    CALENDARIO
+                </a>
+                <a href="../html/invitados.html" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    INVITADOS
+                </a>
+                <a href="#" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    RESERVACIONES
+                </a>
+                <a href="../html/galeria_body.html" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    GALERIA
+                </a>
+                <a href="../html/formulario.html" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    RESGISTRAR
+                </a>
+            </div>
+        </nav>
+        <div class="container-nav-header" style="z-index: 1000;">
+            <nav class="nar-lateral-flotante">
+                <input type="checkbox" id="check">
+                <label for="check" class="bar-btn">
+                    <i class="fas fa-bars fa-2x"></i>
+                </label>
+                <ul class="nav-menu" style="z-index: 1000;">
+                    <li><a href="#H1"><i class="fas fa-chevron-right"></i> Bienvenido</a></li>
+                    <li><a href="#H2"><i class="fas fa-chevron-right"></i> Luagres</a></li>
+                    <li><a href="#H3"><i class="fas fa-chevron-right"></i> Planeacion y Gestion</a></li>
+                    <li><a href="#H4"><i class="fas fa-chevron-right"></i> Colaboradores</a></li>
+                    <li><a href="#H5"><i class="fas fa-chevron-right"></i> Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="contenedor-carousel carrusel">
+            <div class="banner-text">
+                <h1 style="font-weight: bold;">
+                    <span id="letradorada">VOCEM</span> 
+                </h1>
+                <h2>Conferencias Web <span>La Paz - Bolivia</span></h2>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img_header/fondo3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img_header/fondo2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img_header/fondo1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor">
+            <a name="WCM"></a>
+            <center>
+                <h2 class="color">BIENVENIDO</h2>
+            </center>
+            <div class="contenedor-sobre-nosotros">
+                <img src="../img_body/img1.png" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <a name="WCM1"></a>
+                    <h3 class="color"><span>1</span>CONTENIDO</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, doloremque molestias! Deserunt
+                        provident ut at earum laudantium vitae itaque eveniet laboriosam saepe, facilis iste adipisci ea
+                        nobis ab, illum deleniti.</p><br>
+                    <a name="WCM2"></a>
+                    <h3 class="color"><span>2</span>SERVICIOS</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, doloremque molestias! Deserunt
+                        provident ut at earum laudantium vitae itaque eveniet laboriosam saepe, facilis iste adipisci ea
+                        nobis ab, illum deleniti.</p>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio-event">
+            <div class="contenedor">
+                <a name="IMG"></a>
+                <center>
+                    <h2 class="color">LUGARES</h2>
+                </center><br><br>
+                <div class="galeria-img">
+                    <div class="imagen-port">
+                        <img src="../img_body/img2.jpg" alt="">
+                    </div>
+                    <a name="IMG1"></a>
+                    <div class="imagen-port">
+                        <img src="../img_body/img3.png" alt="">
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="../img_body/img4.png" alt="">
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="../img_body/img5.png" alt="">
+                    </div>
+                </div>
+                <a name="IMG2"></a>
+                <div class="galeria-img">
+                    <div class="imagen-port">
+                        <img src="../img_body/img6.png" alt="">
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="../img_body/img7.png" alt="">
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="../img_body/img8.png" alt="">
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="../img_body/img9.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="funcion_body" id="efecto">
+            <div class="bloque planes">
+                <div class="centrar">
+                    <center>
+                        <h4 class="subtitulo">Como funciona</h4>
+                    </center>
+                    <center>
+                        <h2 class="color">PLANEACION Y GESTION</h2>
+                    </center> <br>
+                </div>
+                <div class="centrar contenedor-plan">
+                    <div class="plan">
+                        <img src="../img_body/funcion2.png" width="220" height="200"><br><br>
+                        <strong>
+                            <p>Registrate y crea tu perfil</p>
+                        </strong>
+                    </div>
+                    <div class="plan">
+                        <img src="../img_body/funcion.png" width="220" height="200"> <br><br>
+                        <strong>
+                            <center>
+                                <p>Diligencia de los datos</p>
+                            </center>
+                        </strong>
+                    </div>
+                    <div class="plan">
+                        <img src="../img_body/funcion1.png" width="220" height="200"><br><br>
+
+                        <strong>
+                            <center>
+                                <p>Lanza tu evento</p>
+                            </center>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio-colab">
+            <div class="contenedor">
+                <a name="IVT"></a>
+                <center>
+                    <h2 class="color">COLABORADORES</h2>
+                </center><br><br>
+                <div class="galeria-img">
+                    <a name="IVT1"></a>
+                    <div class="imagen-port">
+                        <img src="../img_invitados/invitado1.jpg" alt="">
+                    </div>
+                    <div class="imagen-port">
+                        <img src="../img_invitados/invitado2.jpg" alt="">
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="../img_invitados/invitado3.jpg" alt="">
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="../img_invitados/invitado4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="galeria-img">
+                    <div class="imagen-port">
+                        <a name="IVT2"></a>
+                        <img src="../img_invitados/invitado5.jpg" alt="">
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="../img_invitados/invitado6.jpg" alt="">
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="../img_invitados/invitado7.jpg" alt="">
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="../img_invitados/invitado8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="evento">
+            <!--tercer bloque-->
+            <div class="bloque servicios">
+                <div class="centrar">
+                    <a name="EVN"></a>
+                    <center>
+                        <h3 class="subtitulo">listas de eventos</h3>
+                    </center>
+                    <center>
+                        <h1 class="color">EVENTOS</h1>
+                    </center>
+
+                </div>
+                <div class="centrar contenedores">
+                    <div class="contenidos ">
+
+                        <img src="../img_body/img2.png" width=" 200" height="180" class="img-evento">
+                        <h4 class="color"> EVENTO 1</h4> <br>
+                        <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis placeat
+                            obcaecati repellat dolore!</p>
+                    </div>
+                    <div class="contenidos">
+                        <img src="../img_body/img3.png" width="200" height="180" class="img-evento">
+                        <h4 class="color"> EVENTO 2</h4> <br>
+                        <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis placeat
+                            obcaecati repellat dolore adipisci assumenda, fuga quidem !</p>
+                    </div>
+                    <div class="contenidos">
+                        <img src="../img_body/img4.png" width="200" height="180" class="img-evento">
+                        <h4 class="color"> EVENTO 3</h4><br>
+                        <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis placeat
+                            obcaecati repellat dolore adipisci assumenda, fuga quidem !</p>
+                    </div>
+                    <div class="contenidos">
+                        <img src="../img_body/img5.png" width="200" height="180" class="img-evento">
+                        <h4 class="color"> EVENTO 4</h4> <br>
+                        <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis placeat
+                            obcaecati repellat dolore adipisci assumenda, fuga quidem!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-btn-flotante">
+                <div class="btn-mas">
+                    <a for="btn-mas" class="fas fa-home fa-2x" href="../html/index.html"></a>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <a href="#footer"></a>
+        <div class="contenedor-footer">
+            <div class="contenedor_cuerpo">
+                <div class="columna1">
+                    <h1 class="color">Realizado por:</h1> <br>
+                    <p>
+                        Fabricio Sebastian Mariscal Tufiño,<br>
+                        Paola Melani Quispe Mamani, <br>
+                        Alejandro Reyes Ortiz Chacon <br>
+                        Universidad:Del Valle <br>
+                        Fecha:7/10/2021 <br>
+                        Materia:Programación web 1 <br>
+                    <address>
+                        <p> Contacto:70567038</p>
+                    </address>
+                    </p>
+                </div>
+
+                <div class="columna2">
+                    <p>
+                    <h1 class="color">Nuestras Redes Sociales</h1>
+                    <div class="social">
+                        <!para los iconos>
+                            <div class="row">
+                                <!para ponerlos en fila>
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"> </i></a>
+                                    <label>Nuestro Facebook</label></a></p>
+                            </div>
+
+                    </div>
+                    <div class="social">
+                        <div class="row">
+                            <a href="#" class="twitter"><i class="fab fa-twitter"> </i></a>
+                            <p><label>Nuestro Twiter</label></p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="row">
+                            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                            <p><label>Nuestro Whatsapp</label></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columna3">
+                    <h1 class="color">
+                        Mas informacion:
+                    </h1>
+                    <div class="form">
+                        <p><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore temporibus a
+                            reiciendis magnam commodi saepe facere ipsum nihil earum veniam illum. </p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
