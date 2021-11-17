@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conferencias</title>
     <!--? Estilos externos-->
+    <!-- CSS-->
     <link rel="stylesheet" href="../css/proyecto.css">
     <link rel="stylesheet" href="../css/estilosfooter.css">
     <link rel="stylesheet" href="../css/body.css">
+
+    <!-- JAVASCRIPT-->
 
     <!--? Iconos-->
     <script src="https://kit.fontawesome.com/e9304c4661.js" crossorigin="anonymous"></script>
@@ -40,6 +43,7 @@
 </head>
 
 <body>
+    <div id="barra-progreso"></div>
     <header>
         <nav class="navbar">
             <div class="contenedor-nav">
@@ -85,6 +89,13 @@
                     <span id="span4"></span>
                     RESGISTRAR
                 </a>
+                <a href="../html/alquiler.html" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    LUGARES A RENTAR
+                </a>
             </div>
         </nav>
         <div class="container-nav-header" style="z-index: 1000;">
@@ -106,7 +117,7 @@
         <div class="contenedor-carousel carrusel">
             <div class="banner-text">
                 <h1 style="font-weight: bold;">
-                    <span id="letradorada">VOCEM</span> 
+                    <span id="letradorada">VOCEM</span>
                 </h1>
                 <h2>Conferencias Web <span>La Paz - Bolivia</span></h2>
             </div>
@@ -397,9 +408,23 @@
             </div>
         </div>
     </footer>
+    <!--? BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!--? JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../js/scrollbar.js">
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop(),
+                dh = $(document).height(),
+                wh = $(window).height(),
+                scrollPercent = (scroll / (dh - wh)) * 100;
+            $('#barra-progreso').css('height', scrollPercent + '%');
+        })
+    </script>
 </body>
 
 </html>
