@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conferencias</title>
     <!--? Estilos externos-->
+    <!-- CSS-->
     <link rel="stylesheet" href="../css/proyecto.css">
     <link rel="stylesheet" href="../css/estilosfooter.css">
     <link rel="stylesheet" href="../css/body.css">
+    <!-- JAVASCRIPT-->
 
     <!--? Iconos-->
     <script src="https://kit.fontawesome.com/e9304c4661.js" crossorigin="anonymous"></script>
@@ -43,6 +45,7 @@
 </head>
 
 <body>
+    <div id="barra-progreso"></div>
     <header>
         <nav class="navbar">
             <div class="contenedor-nav">
@@ -87,9 +90,20 @@
                     <span id="span3"></span>
                     <span id="span4"></span>
                     RESGISTRAR
+                </a>         
+
+                </a>
+                <a href="../html/alquiler.html" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    LUGARES A RENTAR
                 </a>
             </div>
+
         </nav>
+            </div>
         <div class="container-nav-header" style="z-index: 1000;">
             <nav class="nar-lateral-flotante">
                 <input type="checkbox" id="check">
@@ -109,7 +123,7 @@
         <div class="contenedor-carousel carrusel">
             <div class="banner-text">
                 <h1 style="font-weight: bold;">
-                    <span id="letradorada">VOCEM</span> 
+                    <span id="letradorada">VOCEM</span>
                 </h1>
                 <h2>Conferencias Web <span>La Paz - Bolivia</span></h2>
             </div>
@@ -171,56 +185,69 @@
                 </div>
             </div>
         </section>
-        <section class="portafolio-event">
+
+
+        <section class="projects galeria">
             <div class="contenedor">
-                <a name="IMG"></a>
                 <center>
                     <h2 class="color">LUGARES</h2>
                 </center><br><br>
-                <div class="galeria-img">
-                    <div class="imagen-port">
-                        
-                            <img src="../img_body/galeria1.png" alt="" class="gallery__img" style="cursor:context-menu;">
-                            
-               
-
-                    </div>
-                    <a name="IMG1"></a>
-                    <div class="imagen-port">
-                        <img src="../img_body/img3.png" alt="">
-                    </div>
-
-                    <div class="imagen-port">
-                        <img src="../img_body/img4.png" alt="">
-                    </div>
-
-                    <div class="imagen-port">
-                        <img src="../img_body/img5.png" alt="">
-                    </div>
-                </div>
-                <a name="IMG2"></a>
-                <div class="galeria-img">
-                    <div class="imagen-port">
-                        <img src="../img_body/img6.png" alt="">
-                    </div>
-
-                    <div class="imagen-port">
-                        <img src="../img_body/img7.png" alt="">
-                    </div>
-
-                    <div class="imagen-port">
-                        <img src="../img_body/img8.png" alt="">
-                    </div>
-
-                    <div class="imagen-port">
-                        <img src="../img_body/img9.png" alt="">
-                    </div>
+                <div class="projects__grid">
+                    <article class="projects__item">
+                        <a href="#imagen1"><img src="../img_body/img2.jpg" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>
+                    <article class="projects__item">          
+                        <a href="#imagen2"><img src="../img_body/img3.png" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>    
+                    <article class="projects__item">
+                        <a href="#imagen3"><img src="../img_body/img4.png" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>    
+                    <article class="projects__item">
+                        <a href="#imagen4"><img src="../img_body/img5.png" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>  
+                    <article class="projects__item">
+                        <a href="#imagen5"><img src="../img_body/img6.png" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>                  
+                    <article class="projects__item">
+                        <a href="#imagen5"><img src="../img_body/img7.png" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article> 
+                    <article class="projects__item">
+                        <a href="#imagen5"><img src="../img_body/img8.png" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>                  
+                    <article class="projects__item">
+                        <a href="#imagen5"><img src="../img_body/img9.png" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>                         
                 </div>
             </div>
         </section>
-        <section class="funcion_body" id="efecto">
-            <div class="bloque planes">
-                <div class="centrar">
+
+        <section>
+            <div >
+                <div >
                     <center>
                         <h4 class="subtitulo">Como funciona</h4>
                     </center>
@@ -229,13 +256,13 @@
                     </center> <br>
                 </div>
                 <div class="centrar contenedor-plan">
-                    <div class="plan">
+                    <div >
                         <img src="../img_body/funcion2.png" width="220" height="200"><br><br>
                         <strong>
                             <p>Registrate y crea tu perfil</p>
                         </strong>
                     </div>
-                    <div class="plan">
+                    <div >
                         <img src="../img_body/funcion.png" width="220" height="200"> <br><br>
                         <strong>
                             <center>
@@ -243,9 +270,8 @@
                             </center>
                         </strong>
                     </div>
-                    <div class="plan">
+                    <div>
                         <img src="../img_body/funcion1.png" width="220" height="200"><br><br>
-
                         <strong>
                             <center>
                                 <p>Lanza tu evento</p>
@@ -255,53 +281,68 @@
                 </div>
             </div>
         </section>
-        <section class="portafolio-colab">
+
+        <section class="projects galeria">
             <div class="contenedor">
-                <a name="IVT"></a>
                 <center>
                     <h2 class="color">COLABORADORES</h2>
                 </center><br><br>
-                <div class="galeria-img">
-                    <a name="IVT1"></a>
-                    <div class="imagen-port">
-                        <img src="../img_invitados/invitado1.jpg" alt="">
-                    </div>
-                    <div class="imagen-port">
-                        <img src="../img_invitados/invitado2.jpg" alt="">
-                    </div>
-
-                    <div class="imagen-port">
-                        <img src="../img_invitados/invitado3.jpg" alt="">
-                    </div>
-
-                    <div class="imagen-port">
-                        <img src="../img_invitados/invitado4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="galeria-img">
-                    <div class="imagen-port">
-                        <a name="IVT2"></a>
-                        <img src="../img_invitados/invitado5.jpg" alt="">
-                    </div>
-
-                    <div class="imagen-port">
-                        <img src="../img_invitados/invitado6.jpg" alt="">
-                    </div>
-
-                    <div class="imagen-port">
-                        <img src="../img_invitados/invitado7.jpg" alt="">
-                    </div>
-
-                    <div class="imagen-port">
-                        <img src="../img_invitados/invitado8.jpg" alt="">
-                    </div>
-                </div>
+                <div class="projects__grid">
+                    <article class="projects__item">
+                        <a href="#imagen1"><img src="../img_invitados/invitado1.jpg" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>
+                    <article class="projects__item">          
+            <a href="#imagen2"><img src="../img_invitados/invitado2.jpg" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>    
+                    <article class="projects__item">
+            <a href="#imagen3"><img src="../img_invitados/invitado3.jpg" alt=""> <h2 class="gallery__title">Invitado 3</h2> </a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>    
+                    <article class="projects__item">
+                        <a href="#imagen4"><img src="../img_invitados/invitado4.jpg" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>  
+                    <article class="projects__item">
+                        <a href="#imagen5"><img src="../img_invitados/invitado5.jpg" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>                  
+                    <article class="projects__item">
+                        <a href="#imagen5"><img src="../img_invitados/invitado6.jpg" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article> 
+                    <article class="projects__item">
+                        <a href="#imagen5"><img src="../img_invitados/invitado7.jpg" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>                  
+                    <article class="projects__item">
+                        <a href="#imagen5"><img src="../img_invitados/invitado8.jpg" alt=""></a>
+                        <div class="projects__hover">
+                            <p class="projects__title">descripcion</p>
+                        </div>
+                    </article>                         
+                </div> 
             </div>
         </section>
 
-        <section class="evento">
+        <section>
             <!--tercer bloque-->
-            <div class="bloque servicios">
+            <div>
                 <div class="centrar">
                     <a name="EVN"></a>
                     <center>
@@ -375,7 +416,6 @@
                 </div>
             </div>
         </section>
-
     </main>
     <footer>
         <a href="#footer"></a>
@@ -433,9 +473,23 @@
             </div>
         </div>
     </footer>
+    <!--? BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!--? JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../js/scrollbar.js">
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop(),
+                dh = $(document).height(),
+                wh = $(window).height(),
+                scrollPercent = (scroll / (dh - wh)) * 100;
+            $('#barra-progreso').css('height', scrollPercent + '%');
+        })
+    </script>
 </body>
 
 </html>
