@@ -5,9 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilosform.css">
+    <link rel="stylesheet" href="/css/drag.css">
     <title>Formulario de registro</title>
 </head>
 <body>
+    <main class="publicar--empleo">
+        <section class="main__form">
+            <form action="#" class="" enctype="multipart/form-data">
+                <div class="form-file">
+                    <div class="form-file__action">
+                        <div class="divtitulo">
+                            <h1 class="titulo-ejemplo3">Sube tu foto acá para el registro</h1>
+                        </div>
+                        <input type="file" name="image" id="image" />
+                    </div>
+                    <div class="form-file__result" id="result-image">
+                        <img id="img-result" alt="" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="form-button">subir</button>
+                </div>
+                <script src="/java/java1.js"></script>
+            </form>
+            </section>
+        
 <section class="registrar">
     <h4>Formulario de registro de conferencias</h4>
     <input class="controls" type="text" name="" id="nombres" placeholder="ingrese su nombre">
@@ -18,6 +41,7 @@
     <input class="boton" type="submit" value="Registrar">
     <p><a href="#" >Ya tengo una cuenta</a></p>
 </section> 
+</main>
 
 </body>
 

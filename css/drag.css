@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: url(../img_body/fondoh.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 16px;
+	font-family: sans-serif;
+	min-width: 320px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+button {
+	cursor: pointer;
+	outline: none;
+	width: 100%;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	background-color: navy;
+	text-transform: uppercase;
+	color: #fbfbfb;
+	max-width: 350px;
+	margin: 0 auto;
+}
+main.publicar--empleo {
+	padding-left: 40px;
+	padding-right: 40px;
+	min-height: 100vh;
+	width: 450px;
+	padding: 20px;
+	margin-left: 700px;
+}
+main.publicar--empleo form {
+	width: 100%;
+}
+main.publicar--empleo input,
+main.publicar--empleo textarea {
+	width: 100%;
+	border: none;
+	padding: 0 0 15px 15px;
+	outline: none;
+	color: #397dbc;
+	background-color: transparent;
+	border-bottom: 2px solid #52514f;
+}
+main.publicar--empleo input::placeholder,
+main.publicar--empleo textarea::placeholder {
+	color: #609dd6;
+}
+main.publicar--empleo input[type='file'] {
+	border-bottom: none;
+}
+main.publicar--empleo label {
+	color: rgba(48, 166, 221, 0.822);
+}
+.divtitulo{
+	display: flex;
+	align-items: center;
+}
+.titulo-ejemplo3{
+	display: flex;
+	color: white;
+	text-align: center;
+	align-items:center;
+	font-size: 35px;
+	background: navy;
+	padding: 10px;
+	width: 450px;
+	height: 80px;
+}
+.main__form--title {
+	color: #52514f;
+}
+.form-group {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+.form-group label {
+	margin-bottom: 15px;
+}
+.form-group textarea {
+	min-width: 100%;
+	height: 100px;
+	max-height: 200px;
+}
+.form-file {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+	margin-bottom: 20px;
+}
+.form-file__action {
+	width: 100%;
+}
+.form-file__action label {
+	display: block;
+}
+.form-file__action label.title {
+	width: 100%;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.form-file__action input {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	display: none;
+}
+.form-file__result {
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 250px;
+	background-color: #f2f0f0;
+	border-radius: 8px;
+	border: 1px dashed #609dd6;
+	transition: bacgroundColor 0.3s linear;
+	z-index: 10;
+}
+.form-file__result::after {
+	content: 'Clic para elegir imagen.';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	color: #609dd6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-file__result img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 50;
+}
+.form-file__result--active {
+	background-color: rgba(82, 81, 79, 0.314);
+}

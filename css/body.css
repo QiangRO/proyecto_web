@@ -59,6 +59,7 @@ p{
 
 .img-evento{
     float: left; 
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     position: relative;
 }
 
@@ -316,6 +317,18 @@ p{
 
 .move{
     transform: translateX(0%);
+}
+/*efectos de rotacion*/
+
+.color:hover
+{
+    -webkit-transform: rotate(10deg);
+    color: #D77A5B;
+}
+.subtitulo:hover
+{
+    -webkit-transform: rotate(10deg);
+    color: #a80f78;
 }
 
 .img-show{
