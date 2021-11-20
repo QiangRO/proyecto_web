@@ -43,3 +43,5 @@ function mostrarPremio(){
 function ocultarPremio(){
     document.getElementById(`premio`).style.display=`none`;
 }
+
+
