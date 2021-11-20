@@ -22,3 +22,26 @@ closemodal.addEventListener(`click`, ()=>{
     imageContainer.classList.toggle(`show`);
 })
 
+/* */
+$(document).ready(function(){
+          
+    $(".content-box").click(function(){
+       
+        $(".content-box").animate({
+            width:`300px`,
+            height:`100px`
+        }, 1000);
+        $(".content-after").show().animate({
+            opacity: "1"}, 3000);
+    });
+
+});
+
+function mostrarPremio(){
+    document.getElementById(`premio`).style.display=`block`;
+}
+function ocultarPremio(){
+    document.getElementById(`premio`).style.display=`none`;
+}
+
+

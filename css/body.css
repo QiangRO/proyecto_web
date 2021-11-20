@@ -59,6 +59,7 @@ p{
 
 .img-evento{
     float: left; 
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     position: relative;
 }
 
@@ -181,6 +182,8 @@ p{
 
 /*INVITAD0S*/
 
+/*INVITAD0S*/
+
 .container-grid{
     display: grid;
     height: 100vh;
@@ -223,7 +226,7 @@ p{
     position: fixed;
     height: 100%;
     width: 100%;
-    transform: translateX(-100%);
+    transform: translateX(-2500);
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -261,6 +264,41 @@ p{
     font-size: 40px;
     cursor: pointer;
 }
+
+.content-box{
+    width: 240px;
+    height: 60px;
+    border-radius: 6px;
+    background-color: rgb(129, 35, 67);
+    padding: 20px;
+    display: flex;
+}
+
+.content-before{
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+
+#contenedor{
+    display: flex;
+
+}
+
+.content-after{
+    display: none;
+    font-size: 14px;
+    color: #fff;
+    text-align: right;
+    line-height: 16px;
+    opacity: 0;
+
+}
+#premio{
+    display: none;
+}
+  
 
 /*LUGARES*/
 .container-grid{
@@ -316,6 +354,18 @@ p{
 .move{
     transform: translateX(0%);
 }
+/*efectos de rotacion*/
+
+.color:hover
+{
+    -webkit-transform: rotate(10deg);
+    color: #D77A5B;
+}
+.subtitulo:hover
+{
+    -webkit-transform: rotate(10deg);
+    color: #a80f78;
+}
 
 .img-show{
     transform: scale(0);
@@ -343,3 +393,4 @@ p{
     font-size: 40px;
     cursor: pointer;
 }
+
