@@ -6,7 +6,7 @@
 
 header {
     background-color: rgb(32, 44, 58);
-    height: 730px;
+    height: 800px;
 }
 /**HEADER**/
 .carrusel{
@@ -323,3 +323,20 @@ section h1 {
     font-size: 25px;
 }
 /**-->BOTON-FLOTANTE**/
+/**SCROLLBAR**/
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+    display: none;
+}
+#barra-progreso{
+    z-index: 100    ;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+}
+/**-->SCROLLBAR**/
