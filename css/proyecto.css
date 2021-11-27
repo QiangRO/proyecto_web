@@ -419,3 +419,37 @@ input[type="submit"]{
 	padding: 20px;
 }
 /**-->CONTACTO**/
+/**REQUERIMIENTOS CSS**/
+#div1 {
+    position:relative; /*Indica la posición del elemento*/
+    float: left;
+    height: 250px;
+    width: 550px;
+    background-color:#FF4C70;
+    margin-bottom: 20px;
+}
+#div2 {
+    position:absolute;
+    right:12px;
+    top: 5px;
+    height:220px;
+    width:300px;
+    background-color:white;
+
+}
+#div3 {
+    float: right;
+    margin-left:10px;
+    height:250px;
+    width: 370px;;
+    background-color:#202C3A;
+}
+#div4 {
+    position:relative;
+    z-index:1;
+    bottom:3px;
+    right:2px;
+    height:220px;
+    width:300px;
+    background-color:#D77A5B;
+}
