@@ -49,14 +49,14 @@
     <header>
         <nav class="navbar">
             <div class="contenedor-nav">
-                <a href="../html/index.html" class="btn-neon">
+                <a href="../html/eventos.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>
                     <span id="span4"></span>
-                    INICIO
+                    EVENTOS
                 </a>
-                <a href="#" class="btn-neon">
+                <a href="../html/caledario.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>
@@ -103,19 +103,39 @@
         </nav>
         </div>
         <div class="container-nav-header" style="z-index: 1000;">
-            <nav class="nar-lateral-flotante">
+            <aside class="nar-lateral-flotante">
                 <input type="checkbox" id="check">
                 <label for="check" class="bar-btn">
                     <i class="fas fa-bars fa-2x"></i>
                 </label>
                 <ul class="nav-menu" style="z-index: 1000;">
-                    <li><a href="#H1"><i class="fas fa-chevron-right"></i> Bienvenido</a></li>
-                    <li><a href="#H2"><i class="fas fa-chevron-right"></i> Lugares</a></li>
-                    <li><a href="#H3"><i class="fas fa-chevron-right"></i> Planeacion y Gestion</a></li>
-                    <li><a href="#H4"><i class="fas fa-chevron-right"></i> Colaboradores</a></li>
-                    <li><a href="#H5"><i class="fas fa-chevron-right"></i> Eventos</a></li>
-                </ul>
-            </nav>
+                    <li><a href="#H1"><i class="fas fa-chevron-right"></i> Bienvenido</a>
+                        <ol>
+                            <li style="color: white;"><a href="#B1">1. Contenido</li></a>
+                            <li style="color: white;"><a href="#B2">2. Servicios</li></a>
+                        </ol>
+                    </li>
+        
+                    <li><a href="#H2"><i class="fas fa-chevron-right"></i> Lugares</a>
+                        <ol>
+                            <li style="color: white;"><a href="#B1">1. Eventos Realizados</li></a>
+                        </ol>
+                    </li>
+        
+                    <li> <a href="#H3"><i class="fas fa-chevron-right"></i> Planeacion y Gestion</a>
+                    </li>
+        
+                    <li><a href="#H4"><i class="fas fa-chevron-right"></i> Colaboradores</a>
+                    </li>
+                    <li><a href="#H5"><i class="fas fa-chevron-right"></i> Eventos</a>
+                    <ol>
+                        <li style="color: white;"><a href="#E1">1. Eventos</li></a>
+                        <li style="color: white;"><a href="#E2">2. Contactos</li></a>
+                        <li style="color: white;"><a href="#E3">3. Mapa</li></a>
+                    </ol>
+                </li>
+            </ul>
+            </aside>
         </div>
 
         <div class="contenedor-carousel carrusel">
@@ -162,12 +182,12 @@
     </header>
     <main>
         <section class="contenedor">
-            <a name="WCM"></a>
+            <a name="H1"></a>
             <center>
                 <h2 class="color">BIENVENIDO</h2>
             </center>
             <div class="contenedor-sobre-nosotros">
-                
+                <a name="B1"></a>
                 <img src="../img_body/img1.png" alt="" class="imagen-about-us">
                 <div class="contenido-textos" id="div1">
                     <a name="WCM1"></a>
@@ -181,6 +201,7 @@
                 <div class="contenido-textos" id="div3">
                     <div id="div4">
                         <a name="WCM2"></a>
+                        <a name="B2"></a>
                     <h3 class="color"><span>2</span>SERVICIOS</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, doloremque molestias! Deserunt
                         provident ut at earum laudantium vitae itaque eveniet laboriosam saepe, facilis iste adipisci ea
@@ -194,8 +215,10 @@
 
 
         <section class="projects galeria">
+            
             <div class="contenedor">
                 <center>
+                    <a name="H2"></a>
                     <h2 class="color" style="align-items: center;
                     text-align: center;">LUGARES</h2>
                 </center><br><br>
@@ -263,6 +286,7 @@
                         <h4 class="subtitulo">Como funciona</h4>
                     </center>
                     <center>
+                        <a name="H3"></a>
                         <h2 class="color" style="cursor: progress;">PLANEACION Y GESTION</h2>
                     </center> <br>
                 </div>
@@ -296,6 +320,7 @@
         <section class="projects galeria">
             <div class="contenedor">
                 <center>
+                    <a name="H4"></a>
                     <h2 class="color">COLABORADORES</h2>
                 </center><br><br>
                 <div class="projects__grid">
@@ -358,6 +383,8 @@
             <div>
                 <div class="centrar">
                     <a name="EVN"></a>
+                    <a name="E1"></a>
+                    <a name="H5"></a>
                     <center>
                         <h3 class="subtitulo">listas de eventos</h3>
                     </center>
@@ -422,6 +449,7 @@
                     </div>
                 </div>
             </div>
+            <a name="E2"></a>
             <section>
                 <div id="contenidos-paginas">
                     <div id="centro3">
@@ -456,7 +484,7 @@
                                     <input type="submit" name="enviar" value="Enviar consulta">
                                 </form>
                             </div>
-
+                            <a name="E3"></a>
                             <div id="mapa">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464.57118537874726!2d-68.13259567610501!3d-16.50219264490976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f21588b75ce83%3A0x9c091cfcfe9ebcf7!2sEDIFICIO%20AVENIDA!5e0!3m2!1ses!2sbo!4v1637342764529!5m2!1ses!2sbo"
