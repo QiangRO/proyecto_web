@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:  border-box;
+    font-family: 'Times New Roman';
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:seashell;
+    height: 100vh;
+    padding-left: 10px;
+}
+.carta
+{
+ width: 300px; ;
+ background-color: blanchedalmond;
+ padding-left: 10px;
+ transition: 1.3s;
+ border: black solid;
+ border-radius: 30px;
+ margin: 20px;
+}
+.carta.titulo
+{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+.carta.contenido p
+{
+  text-align: justify;
+  font-size: 16px;  
+  padding: 20px;
+}
+.carta:hover
+{
+    transform: scale(1.2);
+}
+.carta.titulo h1
+{
+    font-size: 47px;
+    
+}
