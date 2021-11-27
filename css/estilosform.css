@@ -15,25 +15,29 @@
 }
 .registrar h4 /*el titulo que va al medio*/
 {
+    background-color: mediumblue;
     font-size: 22px;
     margin-bottom: 20px;   
 }
 .controls/*los inputs donde se llena la informacion*/
 {
     width: 100%;
-    background:lightcyan;
+    
     padding: 10px;
-    border-radius: 4px;
-    border: 3px solid burlywood;
+    border-radius: 2px;
+    border: blue solid;
     margin-bottom:14px ;
     font-size: 12px;
-    color: black;
+    
+    cursor:zoom-in;
+    
 }
 .registrar p/*las etiquetas p*/
 {
     height: 40px;
     text-align:center ;
     font-size: 12px;
+    cursor: move;
 }
 
 .registrar .boton/*el boton */
@@ -43,7 +47,8 @@
     border-radius:2px ;
     padding: 10px;
     font-size: 16px;
-    cursor:pointer;
+    cursor:copy;
+    border: blue solid;
 
 }
 body/*imagen de fondo*/
