@@ -5,14 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de Imagenes</title>
+    <title>Conferencias</title>
 
     <!--? Estilos externos-->
     <!-- CSS-->
     <link rel="stylesheet" href="../css/proyecto.css">
-    <link rel="stylesheet" href="../css/estilosfooter.css">
-    <link rel="stylesheet" href="../css/body.css">
-    <link rel="stylesheet" href="../css/galeria.css">
     <link rel="stylesheet" href="../css/imagehover.css">
     <!-- JAVASCRIPT-->
 
@@ -31,8 +28,10 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 
     <!--? Animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -42,8 +41,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,600&display=swap"
         rel="stylesheet">
-     <!-- imagenes -->
-    <link rel="stylesheet" href="../css/imagehover.css">
 </head>
 
 <body>
@@ -51,14 +48,14 @@
     <header>
         <nav class="navbar">
             <div class="contenedor-nav">
-                <a href="../html/index.html" class="btn-neon">
+                <a href="../html/eventos.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>
                     <span id="span4"></span>
-                    INICIO
+                    EVENTOS
                 </a>
-                <a href="#" class="btn-neon">
+                <a href="../html/caledario.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>
@@ -79,7 +76,7 @@
                     <span id="span4"></span>
                     RESERVA
                 </a>
-                <a href="../html/galeria_body.html" class="btn-neon">
+                <a href="../html/galeria.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>
@@ -105,19 +102,39 @@
         </nav>
         </div>
         <div class="container-nav-header" style="z-index: 1000;">
-            <nav class="nar-lateral-flotante">
+            <aside class="nar-lateral-flotante">
                 <input type="checkbox" id="check">
                 <label for="check" class="bar-btn">
                     <i class="fas fa-bars fa-2x"></i>
                 </label>
                 <ul class="nav-menu" style="z-index: 1000;">
-                    <li><a href="#H1"><i class="fas fa-chevron-right"></i> Bienvenido</a></li>
-                    <li><a href="#H2"><i class="fas fa-chevron-right"></i> Lugares</a></li>
-                    <li><a href="#H3"><i class="fas fa-chevron-right"></i> Planeacion y Gestion</a></li>
-                    <li><a href="#H4"><i class="fas fa-chevron-right"></i> Colaboradores</a></li>
-                    <li><a href="#H5"><i class="fas fa-chevron-right"></i> Eventos</a></li>
+                    <li><a href="#H1"><i class="fas fa-chevron-right"></i> Bienvenido</a>
+                        <ol>
+                            <li style="color: white;"><a href="#B1">1. Contenido</li></a>
+                            <li style="color: white;"><a href="#B2">2. Servicios</li></a>
+                        </ol>
+                    </li>
+
+                    <li><a href="#H2"><i class="fas fa-chevron-right"></i> Lugares</a>
+                        <ol>
+                            <li style="color: white;"><a href="#B1">1. Eventos Realizados</li></a>
+                        </ol>
+                    </li>
+
+                    <li> <a href="#H3"><i class="fas fa-chevron-right"></i> Planeacion y Gestion</a>
+                    </li>
+
+                    <li><a href="#H4"><i class="fas fa-chevron-right"></i> Colaboradores</a>
+                    </li>
+                    <li><a href="#H5"><i class="fas fa-chevron-right"></i> Eventos</a>
+                        <ol>
+                            <li style="color: white;"><a href="#E1">1. Eventos</li></a>
+                            <li style="color: white;"><a href="#E2">2. Contactos</li></a>
+                            <li style="color: white;"><a href="#E3">3. Mapa</li></a>
+                        </ol>
+                    </li>
                 </ul>
-            </nav>
+            </aside>
         </div>
 
         <div class="contenedor-carousel carrusel">
@@ -163,89 +180,9 @@
         </div>
     </header>
     <main>
-            <center><h1 class="tipo_tit">Galeria de imagenes</h1></center>
-
-            <div class="container">
-                <div class="item">
-                    <img src="../img_body/glg1.jpg" alt="" class="item-img">
-                    <div class="item-text">
-                        <h3>Imagen 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-        
-                <div class="item">
-                    <img src="../img_body/glg2.jpg" alt="" class="item-img">
-                    <div class="item-text">
-                        <h3>Imagen 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-        
-                <div class="item">
-                    <img src="../img_body/glg3.jpg" alt="" class="item-img">
-                    <div class="item-text">
-                        <h3>Imagen 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-        
-                <div class="item">
-                    <img src="../img_body/glg4.png" alt="" class="item-img">
-                    <div class="item-text">
-                        <h3>Imagen 4</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-        
-        
-                <div class="item">
-                    <img src="../img_body/glg5.png" alt="" class="item-img">
-                    <div class="item-text">
-                        <h3>Imagen 5</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-        
-                <div class="item">
-                    <img src="../img_body/glg6.jpg" alt="" class="item-img">
-                    <div class="item-text">
-                        <h3>Imagen 6</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-        
-                <div class="item">
-                    <img src="../img_body/glg7.jpg" alt="" class="item-img">
-                    <div class="item-text">
-                        <h3>Imagen 7</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-        
-        
-                <div class="item">
-                    <img src="../img_body/glg8.jpg" alt="" class="item-img">
-                    <div class="item-text">
-                        <h3>Imagen 8</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-        
-                <div class="item">
-                    <img src="../img_body/glg9.jpg" alt="" class="item-img">
-                    <div class="item-text">
-                        <h3>Imagen 9</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-btn-flotante">
-                <div class="btn-mas">
-                    <a for="btn-mas" class="fas fa-home fa-2x" href="../html/index.html"></a>
-                    </label>
-                </div>
-            </div>
+        <section class="contenedor">
+            
+        </section>
     </main>
     <footer>
         <a href="#footer"></a>
@@ -307,11 +244,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <!--? JQUERY-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../js/scrollbar.js">
 
+    <link rel="stylesheet" href="../js/scrollbar.js">
     <script type="text/javascript">
         $(window).scroll(function () {
             var scroll = $(window).scrollTop(),
