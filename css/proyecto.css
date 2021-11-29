@@ -403,7 +403,6 @@ p{
     display: block;
 }
 .contenedor{
-    display: flex;
     padding: 40px 0;
     padding-left: 100px;
     width: 100%;
