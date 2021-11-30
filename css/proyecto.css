@@ -672,6 +672,7 @@ footer/*colores */
     text-decoration: none;
     color: linen;
     background-color: #202c3a;
+    
     justify-content:space-between;
 }
 
@@ -680,7 +681,7 @@ footer/*colores */
 width: 100%;
 max-width: 1000px;
 padding-top: 50px;
-margin-left: 250px;
+margin: auto;
 }
 .contenedor_cuerpo
 {
@@ -703,6 +704,7 @@ margin-left: 250px;
 {
     max-width:400px;
     margin-left: 100px;
+    text-align:center;
     
 }
 .columna2 h1
@@ -734,7 +736,8 @@ margin-left: 250px;
 }
 .row label
 {
-    margin-left: 12px;
+    margin-left: 7px;
+    
 }
 
 .form
