@@ -8,12 +8,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    margin: 0; /* remove default margin */
-    scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
-    -ms-overflow-style: none;  /* Disable scrollbar IE 10+ */
-    overflow-y: scroll;
-}
 body::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
@@ -47,16 +41,16 @@ header {
 }
 /**--HEADER**/
 
-/**FIN img header**/
+/**FIN img header
 section {
     min-width: 1000px;
     margin: auto;
     padding: 30px 0;
 }
 section h1 {
-    font-size: 25px; /*tamaño de letra*/
+    font-size: 25px; /*tamaño de letra
     padding-left: 15px;
-}
+}**/
 
 .conte {
     text-align: center;

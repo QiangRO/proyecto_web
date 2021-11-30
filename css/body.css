@@ -193,11 +193,8 @@ p{
 
 /*INVITAD0S*/
 
-/*INVITAD0S*/
-
 .container-grid{
     display: grid;
-    height: 100vh;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-template-areas: "img1 img2 img3 img4"
@@ -235,14 +232,16 @@ p{
 
 .container-img{
     position: fixed;
-    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,.5);
     width: 100%;
-    transform: translateX(-2500);
-    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform .4s ease-in;
+    transform: scale(0);
+    
 }
 
 .move{
@@ -269,7 +268,7 @@ p{
 
 .bx.bx-x{
     position: absolute;
-    color: #fff;
+    color: rgb(0, 0, 0);
     top: 20px;
     right: 10px;
     font-size: 40px;
