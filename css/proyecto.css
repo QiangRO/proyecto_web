@@ -16,6 +16,9 @@ body {
     -ms-overflow-style: none;  /* Disable scrollbar IE 10+ */
     overflow-y: scroll;
 }
+main{
+    background: #ddeefc;
+}
 body::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
@@ -23,7 +26,7 @@ body::-webkit-scrollbar {
 /**HEADER**/
 header {
     background-color: rgb(32, 44, 58);
-    height: 800px;
+    height: auto;
 }
 .carrusel{
     width: 100%;
@@ -402,7 +405,7 @@ p{
     object-fit: cover;
     display: block;
 }
-.contenedor{
+.contenedor2{
     padding: 40px 0;
     padding-left: 100px;
     width: 100%;
@@ -713,10 +716,10 @@ margin-left: 250px;
 .columna3
 {
     margin-left: 100px;
-    
 }
 .columna3 h1
 {
+    height: auto;
     font-size: 22px; 
     color: #a80f78; 
 }
@@ -739,9 +742,9 @@ margin-left: 250px;
 
 .form
 {
-    width: 150px;
-    height: 150px;
-    margin-top: 20px;
+    width: 250px;
+    height: auto;
+    /* margin-top: 5px; */
     display: flex;
 }
 
