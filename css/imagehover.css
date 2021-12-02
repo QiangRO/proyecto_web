@@ -4,8 +4,9 @@
     display: inline-block;
     margin: 0;
     max-width: 100%;
-    background-color:rgb(215, 122, 91);
-    color: indigo;
+    height: 180px;
+    background-color:rgb(223, 157, 136);
+    color: rgb(18, 3, 29);
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -22,7 +23,7 @@
 
 [class^="imghvr-"] figcaption,
 [class*=" imghvr-"] figcaption {
-    background-color: #930434;
+    background-color: #9c3073;
     padding: 30px;
     position: absolute;
     top: 0;
@@ -83,7 +84,7 @@
     left: 0;
     right: 0;
     content: "";
-    background-color: #135796;
+    background-color: #202c3a;
 }
 [class^="imghvr-reveal-"] figcaption,
 [class*=" imghvr-reveal-"] figcaption {
