@@ -55,7 +55,6 @@ header {
 /**BARRA DE NAVEGACION**/
 .navbar {
     background: #202c3a;
-    position: sticky;
     top: 0;
     z-index: 1;
 }
@@ -112,7 +111,6 @@ header {
 /**-->BOTON NEON NAV**/
 /**BARRA LATERAL___ASIDE**/
 .container-nav-header{
-    
     position: fixed;
     top: 0px;
     left: 20px;
@@ -130,15 +128,10 @@ header {
     max-width: 1200px;
     margin: auto;
 }
-.logo{
-    height: 45px;
-    width: 225px;
-    margin-left: 20px;
-}
 .bar-btn{
     font-size: 25px;
     width: auto;
-    color: rgb(215, 122, 91);
+    color: rgb(215, 122, 91); /**MODIFICAME AQUI**/
     margin-top: 0px;
     cursor: pointer;
 }
