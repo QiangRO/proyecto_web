@@ -7,6 +7,7 @@ const closemodal = document.querySelector(`.bx.bx-x`);
 images.forEach(image => {
     image.addEventListener(`click`, () => {
         addImage(image.getAttribute(`src`), image.getAttribute(`alt`))
+        
     })
 })
 
