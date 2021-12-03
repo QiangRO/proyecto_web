@@ -7,10 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilosform.css">
     <link rel="stylesheet" href="../css/drag.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
     <title>Formulario de registro</title>
+    <style>
+        .arreglo
+        {
+            background-color:cyan;
+            
+        }
+    </style>
 </head>
 
 <body>
+    <div id="sidebar">
+        <div class="toggle-btn">
+          <span class="arreglo">&#9776</span>
+        </div>
+        <ul>
+          <li>
+            <img src="../img_body/unilog.jpg" alt="Logo Fazt" class="logo" width="100px" height="100px">
+          </li>
+          <a href="../html/canvas.html"><li>Canvas para editar foto</li></a>
+         <a href="../html/galeria.html"><li>Galería</li></a>
+         <a href="../html/index.html"><li>Volver</li></a>
+        </ul>
+      </div>
+      <script src="../js/main.js"></script>
+    
     <main class="publicar--empleo">
         <section class="main__form">
             <form action="#" class="" enctype="multipart/form-data">
@@ -29,7 +52,10 @@
                 <div class="form-group">
                     <button type="submit" class="form-button">subir</button>
                 </div>
-                <script src="/java1.js"></script>
+                <div class="form-group">
+                <a href="../html/canvas.html"> Editar foto</a>
+                </div>
+                <script src="../java/java1.js"></script>
             </form>
             <form action="">
             <main>
