@@ -157,15 +157,16 @@
                         </div>
                         <div id="derecha">
                             <form action="#" method="POST">
-                                <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="nombre-mensaje">
+                                <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="nombre-mensaje" id="nombre">
                                 <br>
-                                <input type="email" name="correo" placeholder="Ingresa tu correo" class="email-asunto">
+                                <input type="email" name="correo" placeholder="Ingresa tu correo" class="email-asunto" id="correo">
                                 <input type="text" name="asunto" placeholder="Ingresa el asunto"
-                                    class="email-asunto"><br>
+                                    class="email-asunto" id="asunto"><br>
                                 <textarea name="mensaje" placeholder="Ingrese su mensaje "
-                                    class="nombre-mensaje"></textarea><br>
-                                <input type="submit" name="enviar" value="Enviar consulta">
+                                    class="nombre-mensaje" id="mensaje"></textarea><br>
+                                
                             </form>
+                            <button id="btnadd" name="enviar">Enviar</button>
                         </div>
                         <a name="E3"></a>
                         <div id="mapa">
@@ -253,6 +254,36 @@
                 wh = $(window).height(),
                 scrollPercent = (scroll / (dh - wh)) * 100;
             $('#barra-progreso').css('height', scrollPercent + '%');
+        })
+
+        /**/
+        window.onload = function(){
+        alert('la pagina cargo correctamente')
+        }
+
+        /**/
+        class Persona{
+         constructor(_nombre, _correo, _mensaje, _asunto){
+             this.nombre =_nombre
+             this.correo =_correo
+             this.mensaje =_mensaje
+             this.asunto =_asunto
+         }
+        }
+ 
+        const nombre = document.querySelector(selectors='#nombre')
+        const correo = document.querySelector(selectors='#correo')
+        const mensaje = document.querySelector(selectors='#mensaje')
+        const asunto = document.querySelector(selectors='#asunto')
+        const btnadd = document.querySelector(selectors='#btnadd')
+ 
+        btnadd.addEventListener(type='click', listener=()=>{
+            const persona = new Persona(nombre.value, correo.value, mensaje.value, asunto.value)
+            addlocal(persona)
+        })
+ 
+        const addlocal=(persona =>{
+            localStorage.setItem('persona', JSON.stringify(persona))
         })
     </script>
 </body>
