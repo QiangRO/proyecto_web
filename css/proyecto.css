@@ -17,7 +17,7 @@ body {
     overflow-y: scroll;
 }
 main{
-    background: #ddeefc;
+    background: #ffffff;
 }
 body::-webkit-scrollbar {
     width: 0px;
@@ -40,7 +40,6 @@ header {
     color: #fff;
     margin-top: 10em;
     margin-left: 30%;
-    
     z-index: 90;
 }
 .banner-text h1 {
@@ -55,7 +54,6 @@ header {
 /**BARRA DE NAVEGACION**/
 .navbar {
     background: #202c3a;
-    position: sticky;
     top: 0;
     z-index: 1;
 }
@@ -112,7 +110,6 @@ header {
 /**-->BOTON NEON NAV**/
 /**BARRA LATERAL___ASIDE**/
 .container-nav-header{
-    
     position: fixed;
     top: 0px;
     left: 20px;
@@ -130,15 +127,10 @@ header {
     max-width: 1200px;
     margin: auto;
 }
-.logo{
-    height: 45px;
-    width: 225px;
-    margin-left: 20px;
-}
 .bar-btn{
     font-size: 25px;
     width: auto;
-    color: rgb(215, 122, 91);
+    color: rgb(215, 122, 91); /**MODIFICAME AQUI**/
     margin-top: 0px;
     cursor: pointer;
 }
@@ -309,6 +301,13 @@ input[type="submit"]{
 /**-->FORMULARIO DE CONTACTO**/
 /**-->ALEJANDRO**/
 /**PAOLA**/
+button{
+    background: rgb(141, 49, 110);
+    color: orange;
+    padding: 5px 10px;
+    border: 1px solid #086A87;
+    border-radius: 60px; 
+}
 a:visited {
     color:orange; /*para marcar sitios visitados*/
 }
@@ -350,6 +349,7 @@ a:visited {
 }
 p{
     font-family: 'Livvic', sans-serif;
+    font-size: 20px;
 }
 .contenedores{
     position: relative;
@@ -471,7 +471,6 @@ p{
     border: 0px solid ;
     margin: auto;/*para centrar*/
 }
-/*INVITAD0S*/
 
 /*INVITAD0S*/
 .container-grid{
@@ -510,8 +509,6 @@ p{
 }
 .container-img{
     position: fixed;
-    height: 100%;
-    width: 100%;
     transform: translateX(-2500);
     background: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -524,7 +521,8 @@ p{
 }
 .img-show{
     transform: scale(0);
-    height: 80%;
+    height: 10px;
+    width: 500px;
     display: block;
     object-fit: cover;
     transition: transform .2s .2s ;
@@ -533,9 +531,10 @@ p{
     transform: scale(1);
 }
 .copy{
-    position: fixed;
-    color: #fff;
+    position: absolute;
+    color: rgb(3, 3, 3);
     bottom: 40px;
+    background-color: rgb(0, 0, 0);
 }
 .bx.bx-x{
     position: absolute;
@@ -615,14 +614,15 @@ p{
 
 .container-img{
     position: fixed;
-    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,.5);
     width: 100%;
-    transform: translateX(-100%);
-    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform .4s ease-in;
+    transform: scale(0);
 }
 
 .move{
@@ -672,6 +672,7 @@ p{
 footer/*colores */
 {
     width: 100%;
+    height: 100%;
     text-decoration: none;
     color: linen;
     background-color: #202c3a;
@@ -680,21 +681,18 @@ footer/*colores */
 
 .contenedor-footer/*contededor de todo el footer */
 {
-width: 100%;
-max-width: 1000px;
-padding-top: 50px;
-margin-left: 250px;
+    max-width: 1000px;
+    padding-top: 20px;
+    margin: auto;
 }
 .contenedor_cuerpo
-{
+{ 
     display: flex;
-    height:300px ;
-    
+    height:100% ; 
 }
 .columna1/*primera columna del div*/
 {
-    max-width: 700px;
-    
+    max-width: 700px; 
 }
 .columna1 h1
 {
@@ -706,6 +704,7 @@ margin-left: 250px;
 {
     max-width:400px;
     margin-left: 100px;
+    text-align:center;
     
 }
 .columna2 h1
@@ -725,26 +724,17 @@ margin-left: 250px;
 }
 .row
 {
-    margin-top: 20px;
     display: flex;
-    
-    
-}
-.row img
-{
-    width: 36px;
-    height: 35px;
 }
 .row label
 {
-    margin-left: 12px;
+    margin-left: 25px; 
 }
 
 .form
 {
     width: 250px;
     height: auto;
-    /* margin-top: 5px; */
     display: flex;
 }
 
@@ -771,7 +761,6 @@ margin-left: 250px;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin: 0 6px;
     transition: transform 0.4s;
 }
 .social a:hover

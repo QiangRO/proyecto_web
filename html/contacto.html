@@ -55,13 +55,13 @@
                     <span id="span4"></span>
                     EVENTOS
                 </a>
-                <a href="../html/caledario.html" class="btn-neon">
+                <!-- <a href="../html/caledario.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>
                     <span id="span4"></span>
                     CALENDARIO
-                </a>
+                </a> -->
                 <a href="../html/invitados.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
@@ -69,13 +69,13 @@
                     <span id="span4"></span>
                     INVITADOS
                 </a>
-                <a href="../html/reservas.html" class="btn-neon">
+                <!-- <a href="../html/reservas.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>
                     <span id="span4"></span>
                     RESERVA
-                </a>
+                </a> -->
                 <a href="../html/galeria.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
@@ -142,15 +142,13 @@
                 <div id="centro3">
                     <h1 class="color">Contacto </h1>
                     <p class="descripcion-pagina">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        Gracias por utilizar nuestros servicios puede llamarnos, mandarnos un correo o tambien puede ponerse en contacto con nosotros utilizando el formulario.
                     </p>
                     <hr>
                     <div id="contenido-nosotros">
                         <div id="izquierda">
                             <p class="descripcion-pagina texto-contacto">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br>
+                                Para poder contactarnos ediante el formulario llena tus datos y envia tu consulta, nuestro equipo vocem esta listo para ayudarte con cualquier consulta que tengas.<br><br>
                                 Telélefono: <strong>1234-45678</strong><br>
                                 Celular: <strong>8765-4321</strong><br>
                                 Email: <strong><a href="mailto: juanventura200@gmail.com"
@@ -159,15 +157,16 @@
                         </div>
                         <div id="derecha">
                             <form action="#" method="POST">
-                                <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="nombre-mensaje">
+                                <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="nombre-mensaje" id="nombre">
                                 <br>
-                                <input type="email" name="correo" placeholder="Ingresa tu correo" class="email-asunto">
+                                <input type="email" name="correo" placeholder="Ingresa tu correo" class="email-asunto" id="correo">
                                 <input type="text" name="asunto" placeholder="Ingresa el asunto"
-                                    class="email-asunto"><br>
+                                    class="email-asunto" id="asunto"><br>
                                 <textarea name="mensaje" placeholder="Ingrese su mensaje "
-                                    class="nombre-mensaje"></textarea><br>
-                                <input type="submit" name="enviar" value="Enviar consulta">
+                                    class="nombre-mensaje" id="mensaje"></textarea><br>
+                                
                             </form>
+                            <button id="btnadd" name="enviar">Enviar</button>
                         </div>
                         <a name="E3"></a>
                         <div id="mapa">
@@ -235,8 +234,7 @@
                         <strong>Mas informacion:</strong>
                     </h1>
                     <div class="form">
-                        <p><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore temporibus a
-                            reiciendis magnam commodi saepe facere ipsum nihil earum veniam illum.
+                        <p><br> Las maneras para comunicarse es mediante el contacto que se tiene y las redes sociales.
                         <a href="../html/contacto.html">Contactanos</a></p><br>
                     </div>
                 </div>
@@ -256,6 +254,36 @@
                 wh = $(window).height(),
                 scrollPercent = (scroll / (dh - wh)) * 100;
             $('#barra-progreso').css('height', scrollPercent + '%');
+        })
+
+        /**/
+        window.onload = function(){
+        alert('la pagina cargo correctamente')
+        }
+
+        /**/
+        class Persona{
+         constructor(_nombre, _correo, _mensaje, _asunto){
+             this.nombre =_nombre
+             this.correo =_correo
+             this.mensaje =_mensaje
+             this.asunto =_asunto
+         }
+        }
+ 
+        const nombre = document.querySelector(selectors='#nombre')
+        const correo = document.querySelector(selectors='#correo')
+        const mensaje = document.querySelector(selectors='#mensaje')
+        const asunto = document.querySelector(selectors='#asunto')
+        const btnadd = document.querySelector(selectors='#btnadd')
+ 
+        btnadd.addEventListener(type='click', listener=()=>{
+            const persona = new Persona(nombre.value, correo.value, mensaje.value, asunto.value)
+            addlocal(persona)
+        })
+ 
+        const addlocal=(persona =>{
+            localStorage.setItem('persona', JSON.stringify(persona))
         })
     </script>
 </body>

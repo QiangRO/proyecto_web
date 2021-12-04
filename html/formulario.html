@@ -7,10 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilosform.css">
     <link rel="stylesheet" href="../css/drag.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
     <title>Formulario de registro</title>
+    <style>
+        .arreglo
+        {
+            background-color:cyan;
+            
+        }
+    </style>
 </head>
 
 <body>
+    <div id="sidebar">
+        <div class="toggle-btn">
+          <span class="arreglo">&#9776</span>
+        </div>
+        <ul>
+          <li>
+            <img src="../img_body/unilog.jpg" alt="Logo Fazt" class="logo" width="100px" height="100px">
+          </li>
+          <a href="../html/canvas.html"><li>Canvas para editar foto</li></a>
+         <a href="../html/galeria.html"><li>Galería</li></a>
+         <a href="../html/index.html"><li>Volver</li></a>
+        </ul>
+      </div>
+      <script src="../js/main.js"></script>
+    
     <main class="publicar--empleo">
         <section class="main__form">
             <form action="#" class="" enctype="multipart/form-data">
@@ -29,21 +52,38 @@
                 <div class="form-group">
                     <button type="submit" class="form-button">subir</button>
                 </div>
+                <div class="form-group">
+                <a href="../html/canvas.html"> Editar foto</a>
+                </div>
                 <script src="../java/java1.js"></script>
             </form>
+            <form action="">
+            <main>
+                <section class="registrar">
+                    <h4>Formulario</h4>
+                    <input class="controls" type="text" name="" id="nombre" placeholder="ingrese su nombre">
+                    <input class="controls"  type="text" name="" id="apellido" placeholder="ingrese su apellido">
+                    <input class="controls"  type="mail" name="" id="correo" placeholder="ingrese su correo">
+                    <input class="controls"  type="password" name="" id="contraseña" placeholder="ingrese su contraseña">
+                    <p>Estoy de acuerdo con<a href="#">Terminos y condiciones</a></p>
+                    <input class="boton" type="submit" value="Registrar" onclick="return enviarformulario()">
+                    <p><a href="login.html" >Ya tengo una cuenta</a></p>
+                </section> 
+            </main>
+            
+        </form>
+        <div class="lado" id="error"></div>
+        <script src="../js/javalida.js"> </script>
         </section>
-
-        <section class="registrar">
-            <h4>Formulario de registro de conferencias</h4>
-            <input class="controls" type="text" name="" id="nombres" placeholder="ingrese su nombre">
-            <input class="controls" type="text" name="" id="apellidos" placeholder="ingrese su apellido">
-            <input class="controls" type="mail" name="" id="Correo" placeholder="ingrese su correo">
-            <input class="controls" type="password" name="" id="Correo" placeholder="ingrese su contraseña">
-            <p>Estoy de acuerdo con<a href="#">Terminos y condiciones</a></p>
-            <input class="boton" type="submit" value="Registrar">
-            <p><a href="#">Ya tengo una cuenta</a></p>
-        </section>
+        
     </main>
+   <script>
+      var name;
+      do{
+      name = prompt("Introduce un nombre válido: ", "Coloca aquí tu nombre");
+      }while(!isNaN(name)); 
+   </script>
+        
 </body>
 
 </html>

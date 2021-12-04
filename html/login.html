@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosform.css">
+    <link rel="stylesheet" href="../css/drag.css">
+    <title>Login</title>
+    <style>
+        h4
+        {
+            text-align: center;
+        }
+        .boton
+        {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+        <section class="registrar">
+            <h4>Login</h4>
+            <input type="text" id="valor" placeholder="Nombre de usuario" onblur="minhaFuncao()" class="controls">
+            <div id="resultado"></div>
+
+            <input id="text"  class="controls" type="mail" name=""  placeholder="ingrese su correo">
+            <div id="result" style="display: none;">usted apreto la tecla enter</div>
+            
+            <input class="controls" type="password" name="" id="contraseña" placeholder="Ingrese su contraseña">
+            <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+            <input class="boton" type="submit" value="Iniciar sesión ahora">
+            
+        </section>
+
+        <script>
+            document.getElementById('valor').focus();
+            function minhaFuncao(){
+                var valor = document.getElementById('valor').value;
+    
+                if(valor){
+                    document.getElementById('resultado').innerHTML=valor;
+                }else{
+                    document.getElementById('resultado').innerHTML="campo vacio";
+                }
+                
+            }
+    
+            /**/
+            var text = document.getElementById("text");
+            var result = document.getElementById("result");
+    
+            const TECLAENTER = 13;
+            text.addEventListener("keypress", function(evento){
+                if(evento.keyCode == TECLAENTER)
+                result.style.display="block";
+            })
+        </script>
+    </main>
+</body>
+
+</html>

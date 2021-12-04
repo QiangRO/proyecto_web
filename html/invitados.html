@@ -10,11 +10,11 @@
     <!--? Estilos externos-->
     <!-- CSS-->
     <link rel="stylesheet" href="../css/proyecto.css">
-    <link rel="stylesheet" href="../css/imagehover.css">
     <!-- JAVASCRIPT-->
 
     <!--? Iconos-->
     <script src="https://kit.fontawesome.com/e9304c4661.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
     <!--? Fuentes-->
     <link
@@ -55,13 +55,13 @@
                     <span id="span4"></span>
                     EVENTOS
                 </a>
-                <a href="../html/caledario.html" class="btn-neon">
+                <!-- <a href="../html/caledario.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>
                     <span id="span4"></span>
                     CALENDARIO
-                </a>
+                </a> -->
                 <a href="../html/invitados.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
@@ -69,13 +69,13 @@
                     <span id="span4"></span>
                     INVITADOS
                 </a>
-                <a href="../html/reservas.html" class="btn-neon">
+                <!-- <a href="../html/reservas.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
                     <span id="span3"></span>
                     <span id="span4"></span>
                     RESERVA
-                </a>
+                </a> -->
                 <a href="../html/galeria.html" class="btn-neon">
                     <span id="span1"></span>
                     <span id="span2"></span>
@@ -100,41 +100,6 @@
                 </a>
             </div>
         </nav>
-        </div>
-        <div class="container-nav-header" style="z-index: 1000;">
-            <aside class="nar-lateral-flotante">
-                <input type="checkbox" id="check">
-                <label for="check" class="bar-btn">
-                    <i class="fas fa-bars fa-2x"></i>
-                </label>
-                <ul class="nav-menu" style="z-index: 1000;">
-                    <li><a href="#H1"><i class="fas fa-chevron-right"></i> Bienvenido</a>
-                        <ol>
-                            <li style="color: white;"><a href="#B1">1. Contenido</li></a>
-                            <li style="color: white;"><a href="#B2">2. Servicios</li></a>
-                        </ol>
-                    </li>
-
-                    <li><a href="#H2"><i class="fas fa-chevron-right"></i> Lugares</a>
-                        <ol>
-                            <li style="color: white;"><a href="#B1">1. Eventos Realizados</li></a>
-                        </ol>
-                    </li>
-
-                    <li> <a href="#H3"><i class="fas fa-chevron-right"></i> Planeacion y Gestion</a>
-                    </li>
-
-                    <li><a href="#H4"><i class="fas fa-chevron-right"></i> Colaboradores</a>
-                    </li>
-                    <li><a href="#H5"><i class="fas fa-chevron-right"></i> Eventos</a>
-                        <ol>
-                            <li style="color: white;"><a href="#E1">1. Eventos</li></a>
-                            <li style="color: white;"><a href="#E2">2. Contactos</li></a>
-                            <li style="color: white;"><a href="#E3">3. Mapa</li></a>
-                        </ol>
-                    </li>
-                </ul>
-            </aside>
         </div>
 
         <div class="contenedor-carousel carrusel">
@@ -178,33 +143,34 @@
                 </button>
             </div>
         </div>
-    </header>
+    </header> <br><br>
     <main>
-        <section class="container-grid">
-            <img src="../img_body/invitados1.png" alt="" class="img img-1">
-            <img src="../img_body/invitados2.png" alt="" class="img img-2">
-            <img src="../img_body/invitados3.png" alt="" class="img img-3">
-            <img src="../img_body/invitados4.png" alt="" class="img img-4">
-            <img src="../img_body/invitados6.png" alt="" class="img img-5">
-            <div class="container-img">
-                <img src="" alt="" class="img-show">
-                <i class='bx bx-x'></i>
-                <p class="copy"></p>
-                <button type="button" onclick="mostrarPremio();">VER DESCRIPCION</button>
-                <section id="descripcion">
-                    <div id="premio">
-                        <div class="content-box">
-                            <p class="content-before">NOMBRE</p><br>
-                            <p class="content-after">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui animi
-                                possimus culpa, sequi maiores molestiae labore
-                                <a href="javascript:void(0);" onclick="ocultarPremio();"
-                                    style="color: black;">GUARDAR</a>
-                            </p>
+            <section class="container-grid ">
+                <img src="../img_body/invitados1.png" alt="BETZABE DINA MICHME" class="img img-1">
+                <img src="../img_body/invitados2.png" alt="JUAN GOMEZ PEREZ" class="img img-2">
+                <img src="../img_body/invitados3.png" alt="LUIS JAVIER MAMANI" class="img img-3">
+                <img src="../img_body/invitados4.png" alt="PATRICIA QUISPE HUMEREZ" class="img img-4">
+                <img src="../img_body/invitados6.png" alt="REYNALDO FLORES MAMANI" class="img img-5">
+        
+                <div class="container-img">
+                    <img src="" alt="" class="img-show">
+                    <i class='bx bx-x'></i>
+                    <p class="copy"></p>
+                    <button type="button" style="color: white; background: black;" onclick="mostrarPremio();">VER </button>
+                    <section id="descripcion">
+                        <div id="premio">
+                            <div class="content-box">
+                                <p class="content-before">INVITADOS</p><br>
+                                <p class="content-after">Invitados de la conferencia de Startups y su enfoque en la innovacion <br>
+                                    <a href="javascript:void(0);" onclick="ocultarPremio();" style="color: black;">GUARDAR</a>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </section>
-            </div>
-        </section>
+        
+                    </section>
+                </div>
+            </section>
+        <script src="../js/lugares.js"></script>
     </main>
     <footer>
         <a href="#footer"></a>
@@ -251,8 +217,7 @@
                         <strong>Mas informacion:</strong>
                     </h1>
                     <div class="form">
-                        <p><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore temporibus a
-                            reiciendis magnam commodi saepe facere ipsum nihil earum veniam illum. </p><br>
+                        <p><br> Las maneras para comunicarse es mediante el contacto que se tiene y las redes sociales.</p><br>
                     </div>
                 </div>
             </div>
