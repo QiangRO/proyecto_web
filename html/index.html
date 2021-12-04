@@ -191,10 +191,15 @@
                 <div class="contenido-textos">
                     <a name="WCM1"></a>
                     <h3 class="color"><span>1</span>CONTENIDO</h3>
-                    <p>En esta pagina podras ver compra de entradas, tambien lugares donde se puede realizar los eventos, tienes acceso a todos los datos de los eventos y conferencias que se realizaran, para una mejor experiencia regitrate como usuario. </p><br>
+                    <p>En esta pagina podras ver compra de entradas, tambien lugares donde se puede realizar los eventos, tienes acceso a todos los datos de los eventos y conferencias que se realizaran, para una mejor experiencia registrate como usuario. </p>
+                    <button onclick="speak('CONTENIDO: En esta página podrás ver compra de entradas, también lugares donde se puede realizar los eventos, tienes acceso a todos los datos de los eventos y conferencias que se realizaran, para una mejor experiencia regístrate como usuario', 'es-es');">
+                        Escuchar
+                        </button><br> <br><br>
                     <a name="WCM2"></a>
                     <h3 class="color"><span>2</span>SERVICIOS</h3>
-                    <p>Los servicios que damos son: venta de entradas, registro del usuario, informacion de eventos y conferencias.</p>
+                    <p>Los servicios que se da son: venta de entradas, registro del usuario,  información de eventos y conferencias.</p>
+                    <button onclick="speak('SERVICIOS: Los servicios que se da son: venta de entradas, registro del usuario,  información de eventos y conferencias', 'es-es');"> Escuchar
+                    </button>
                 </div>
             </div>
         </section>
@@ -505,6 +510,11 @@
                 scrollPercent = (scroll / (dh - wh)) * 100;
             $('#barra-progreso').css('height', scrollPercent + '%');
         })
+
+    ///////** */
+    function speak(text, language) {
+    var s = new SpeechSynthesisUtterance(text);
+    s.lang = language;	speechSynthesis.speak(s);}
     </script>
 </body>
 
