@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgEpKnBhR574VxDg73mkEjJeuRCTJ77pU&map_ids=3792af100ec9ffce&callback=initMap">
+        </script>
+</head>
+
+<body>
+    <div id="mapa" style="width: 700px; height: 500px;">
+
+    </div>
+    <script type="text/javascript">
+        navigator.geolocation.getCurrentPosition(fn_ok, fn_error);
+        var divMapa = document.getElementById('mapa');
+
+        function fn_error() {
+            divMapa.innerHTML = "Hubo un problema solicitando los datos";
+        }
+
+        function fn_ok(respuesta) {
+            //mostrar_objeto(respuesta.coords);
+            var lat = respuesta.coords.latitude;
+            var lon = respuesta.coords.longitude;
+            const uni = { lat: -16.496743834614353, lng: -68.15189063335468 } 
+            
+            // function initMapp(){
+            //     map = new google.maps.Map(document.getElementById("mapa"),)
+            // }
+
+            var gLatLon = new google.maps.LatLng(lat, lon);
+            var objConfig = {
+                zoom: 16,
+                center: gLatLon
+            }
+            var gMapa = new google.maps.Map(divMapa, objConfig);
+            var objConfigMarker = {
+                position: gLatLon,
+                map: gMapa,
+                title: "Esta es su ubicacion"
+            }
+            var gMarker = new google.maps.Marker(objConfigMarker);
+            
+            // //CONFIGURARNDO UN PUNTO OBTENIDO DE UNA UBICACION
+            // var gCoder = new google.maps.Geocoder();
+            // var objInformacion = {
+            //     address: 'Cementerio General de La Paz, Av.Baptista, La Paz'
+            //     // address: 'Corrientes 2049, Balvanera, Buenos Aires'
+            // }
+
+            // gCoder.geocode(objInformacion, fn_coder);
+            
+            // function fn_coder(datos) {
+            //     var coordenadas =  datos[0].geometry.location;
+            //     var config = {
+            //         map: gMapa,
+            //         position: coordenadas,
+            //         title: "Univalle"
+            //     }
+            //     var gMarkerDV = new google.maps.Marker( config )
+            // }
+            // //-->CONFIGURARNDO UN PUNDO OBTENIDO DE UNA UBICACION
+            var objConfigDR={
+                map:gMapa,
+            }
+            var objConfigDS={
+                origin:gLatLon,
+                destination:uni,
+                travelMode: google.maps.TravelMode.DRIVING
+            }
+
+            var ds = new google.maps.DirectionsService();
+            var dr = new google.maps.DirectionsRenderer(objConfigDR);
+            ds.route(objConfigDS, fnRutear);
+
+            function fnRutear(resultados, status){
+                if  (status =='OK'){
+                    dr.setDirections(resultados);
+                }
+                else{
+                    alert('Error '+status);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
