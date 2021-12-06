@@ -5,3 +5,5 @@ $(window).scroll(function () {
         scrollPercent = (scroll / (dh - wh)) * 100;
     $('#barra-progreso').css('height', scrollPercent + '%');
 })
+
+
