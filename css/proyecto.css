@@ -52,6 +52,8 @@ header {
     color: #fff;
     text-decoration: none;
     background: #870867;
+    padding: 9px;
+    margin-top: 8px;
 }
 .estilo-boton{
     text-decoration: none;
