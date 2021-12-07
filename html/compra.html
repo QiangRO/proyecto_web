@@ -98,62 +98,29 @@
                 </a>
             </div>
         </nav>
-        </div>
-        <div class="container-nav-header" style="z-index: 1000;">
-            <aside class="nar-lateral-flotante">
-                <input type="checkbox" id="check">
-                <label for="check" class="bar-btn">
-                    <i class="fas fa-bars fa-2x"></i>
-                </label>
-                <ul class="nav-menu" style="z-index: 1000;">
-                    <li><a href="#H1"><i class="fas fa-chevron-right"></i> Bienvenido</a>
-                        <ol>
-                            <li style="color: white;"><a href="#B1">1. Contenido</li></a>
-                            <li style="color: white;"><a href="#B2">2. Servicios</li></a>
-                        </ol>
-                    </li>
-                    <li><a href="#H2"><i class="fas fa-chevron-right"></i> Lugares</a>
-                        <ol>
-                            <li style="color: white;"><a href="#B1">1. Eventos Realizados</li></a>
-                        </ol>
-                    </li>
-                    <li> <a href="#H3"><i class="fas fa-chevron-right"></i> Planeacion y Gestion</a>
-                    </li>
-                    <li><a href="#H4"><i class="fas fa-chevron-right"></i> Colaboradores</a>
-                    </li>
-                    <li><a href="#H5"><i class="fas fa-chevron-right"></i> Eventos</a>
-                        <ol>
-                            <li style="color: white;"><a href="#E1">1. Eventos</li></a>
-                            <li style="color: white;"><a href="#E2">2. Contactos</li></a>
-                            <li style="color: white;"><a href="#E3">3. Mapa</li></a>
-                        </ol>
-                    </li>
-                </ul>
-            </aside>
-        </div>
     </header>
     <main>
         <section class="seccion contenedor2">
-            <h2>Compra tus Tickets</h2>
+            <h2 class="color">Compra tus Tickets</h2>
             <form id="registro" class="registro" action="pagar.html" method="post">
                 <div id="datos_usuario" class="registro caja clearfix">
                     <div class="campo">
-                        <label for="nombre">Nombre:</label>
+                        <label for="nombre" class="color">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
                     </div>
                     <div class="campo">
-                        <label for="apellido">Apellido:</label>
+                        <label for="apellido" class="color">Apellido:</label>
                         <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido">
                     </div>
                     <div class="campo">
-                        <label for="email">Email:</label>
+                        <label for="email" class="color">Email:</label>
                         <input type="email" id="email" name="email" placeholder="Tu Email">
                     </div>
                     <div id="error"></div>
                 </div>
                 <!--#datos_usuario-->
                 <div id="paquetes" class="paquetes">
-                    <h3>Elige el número de boletos</h3>
+                    <h3 class="color">Elige el número de boletos</h3>
                     <ul class="lista-precios clearfix">
                         <li>
                             <div class="tabla-precio">
@@ -166,8 +133,7 @@
                                 </ul>
                                 <div class="orden">
                                     <label for="pase_dia">Boletos deseados:</label>
-                                    <input type="number" min="0" id="pase_dia" size="3" 
-                                        placeholder="0">
+                                    <input type="number" min="0" id="pase_dia" size="3" placeholder="0">
                                     <input type="hidden" value="30">
                                 </div>
                             </div>
@@ -183,9 +149,8 @@
                                 </ul>
                                 <div class="orden">
                                     <label for="pase_completo">Boletos deseados:</label>
-                                    <input type="number" min="0" id="pase_completo" size="3"
-                                        placeholder="0">
-                                    <input type="hidden" value="50" >
+                                    <input type="number" min="0" id="pase_completo" size="3" placeholder="0">
+                                    <input type="hidden" value="50">
                                 </div>
                             </div>
                         </li>
@@ -200,8 +165,7 @@
                                 </ul>
                                 <div class="orden">
                                     <label for="pase_dosdias">Boletos deseados:</label>
-                                    <input type="number" min="0" id="pase_dosdias" size="3" 
-                                        placeholder="0">
+                                    <input type="number" min="0" id="pase_dosdias" size="3" placeholder="0">
                                     <input type="hidden" value="45">
                                 </div>
                             </div>
@@ -209,12 +173,11 @@
                     </ul>
                 </div>
                 <!--#resumen-->
-    
             </form>
         </section>
         <div class="contenedor">
             <!-- Tarjeta -->
-            <section  id="tarjeta">
+            <section id="tarjeta">
             </section>
             <!-- Contenedor Boton Abrir Formulario -->
             <div class="contenedor-btn">
@@ -258,6 +221,12 @@
                 <button type="submit" class="btn-enviar">Enviar</button>
             </form>
         </div>
+        <div class="container-btn-flotante">
+                <div class="btn-mas">
+                    <a for="btn-mas" class="fas fa-home fa-2x" href="../html/index.html"></a>
+                    </label>
+                </div>
+            </div>
     </main>
     <footer>
         <a href="#footer"></a>
@@ -277,18 +246,14 @@
                     </address>
                     </p>
                 </div>
-
                 <div class="columna2">
                     <p>
                     <h1 class="color"><cite> Nuestras Redes Sociales</cite></h1>
                     <div class="social">
-
                         <div class="row">
-
                             <a href="#" class="facebook"><i class="fab fa-facebook-f"> </i></a>
-                            <label>Nuestro Facebook</label></a></p>
+                            <p><label>Nuestro Facebook</label></p>
                         </div>
-
                     </div>
                     <div class="social">
                         <div class="row">
@@ -308,7 +273,9 @@
                         <strong>Mas informacion:</strong>
                     </h1>
                     <div class="form">
-                        <p><br>Las maneras para comunicarse es mediante el contacto que se tiene y las redes sociales.</p><br>
+                        <p><br> Las maneras para comunicarse es mediante el contacto que se tiene y las redes sociales.
+                            <a href="../html/contacto.html">Contactanos</a>
+                        </p><br>
                     </div>
                 </div>
             </div>

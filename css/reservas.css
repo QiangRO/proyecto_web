@@ -13,8 +13,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
+	background: #ddeefc;
+	font-family: 'Montserrat', sans-serif;
 }
 /** Globales **/
 .contenedor2 {
@@ -45,7 +45,7 @@ body {
   text-align: center;
 }
 h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 2.4em;
     text-transform: uppercase;
     text-align: center;
@@ -53,7 +53,6 @@ h2 {
 h2::after {
   content: '';
   margin: 0 auto;
-  background-image: url(../img/separador.png);
   height: 30px;
   width: 100px;
   display: block;
@@ -61,7 +60,7 @@ h2::after {
 h3 {
   font-size: 1.8em;
   color: rgb(168, 15, 120);
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   margin: 0;
 }
 .button {
@@ -70,7 +69,7 @@ h3 {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   text-decoration: none;
   font-size: 1em;
   margin-top: 20px;
@@ -127,26 +126,15 @@ div.tabla-precio:hover {
   box-shadow: 0px 0px 50px #666;
 }
 div.tabla-precio ul li {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 14px;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: #868686;
     line-height: 26px;
 }
-div.tabla-precio ul li:before {
-  font-family: 'FontAwesome';
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 5px;
-  font-size: 20px;
-  color: green;
-  -webkit-font-smoothing: antialiased;
-  content: '\f00c';
-  
-}
 div.tabla-precio h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-size:16px;
   text-transform: uppercase;
 }
@@ -172,12 +160,6 @@ h4 {
   border-bottom: 2px solid #fe4918;
   padding-bottom: 10px;
   font-size: 1.2em;
-}
-div.caja {
-  background-color: white;
-  border: 1px solid #e1e1e1;
-  padding: 10px;
-  margin: 10px;
 }
 div.campo {
   padding: 20px;
@@ -226,8 +208,7 @@ div.paquetes .tabla-precio input {
 }
 .contenido-dia .autor {
     font-weight: bold;
-    font-family: arial,helvetica;
+    font-family: 'Alegreya Sans SC', sans-serif;
     text-transform: uppercase;
     font-size: 12px;
 }
-

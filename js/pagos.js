@@ -9,18 +9,6 @@ const tarjeta = document.querySelector('#tarjeta'),
 	yearExpiracion = document.querySelector('#tarjeta .year');
 ccv = document.querySelector('#tarjeta .ccv');
 
-// * Volteamos la tarjeta para mostrar el frente.
-const mostrarFrente = () => {
-	if (tarjeta.classList.contains('active')) {
-		tarjeta.classList.remove('active');
-	}
-}
-
-// * Rotacion de la tarjeta
-tarjeta.addEventListener('click', () => {
-	tarjeta.classList.toggle('active');
-});
-
 // * Boton de abrir formulario
 btnAbrirFormulario.addEventListener('click', () => {
 	btnAbrirFormulario.classList.toggle('active');
@@ -79,7 +67,6 @@ formulario.inputNumero.addEventListener('keyup', (e) => {
 	}
 
 	// Volteamos la tarjeta para que el usuario vea el frente.
-	mostrarFrente();
 });
 
 // * Input nombre de tarjeta
@@ -93,20 +80,17 @@ formulario.inputNombre.addEventListener('keyup', (e) => {
 	if (valorInput == '') {
 		nombreTarjeta.textContent = 'Jhon Doe';
 	}
-
-	mostrarFrente();
 });
 
 // * Select mes
 formulario.selectMes.addEventListener('change', (e) => {
 	mesExpiracion.textContent = e.target.value;
-	mostrarFrente();
+
 });
 
 // * Select Año
 formulario.selectYear.addEventListener('change', (e) => {
 	yearExpiracion.textContent = e.target.value.slice(2);
-	mostrarFrente();
 });
 
 // * CCV
@@ -114,7 +98,6 @@ formulario.inputCCV.addEventListener('keyup', () => {
 	if (!tarjeta.classList.contains('active')) {
 		tarjeta.classList.toggle('active');
 	}
-
 	formulario.inputCCV.value = formulario.inputCCV.value
 		// Eliminar los espacios
 		.replace(/\s/g, '')
