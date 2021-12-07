@@ -459,8 +459,6 @@
                 scrollPercent = (scroll / (dh - wh)) * 100;
             $('#barra-progreso').css('height', scrollPercent + '%');
         })
-
-    ///////** */
     function speak(text, language) {
     var s = new SpeechSynthesisUtterance(text);
     s.lang = language;	speechSynthesis.speak(s);}
