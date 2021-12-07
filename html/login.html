@@ -25,13 +25,40 @@
 
         <section class="registrar">
             <h4>Login</h4>
-            <input class="controls" type="text" name="" id="nombres" placeholder="Nombre de usuario">
+            <input class="controls" type="text" onkeypress="return soloLetras(event)" onblur="limpia()" id="miInput" placeholder="Ingresa tu nombre de usuario">
             
             <input class="controls" type="mail" name="" id="Correo" placeholder="ingrese su correo">
             <input class="controls" type="password" name="" id="contraseña" placeholder="Ingrese su contraseña">
             <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
             <input class="boton" type="submit" value="Iniciar sesión ahora">
+            <script>
+                function soloLetras(e) {
+                key = e.keyCode || e.which;
+                tecla = String.fromCharCode(key).toLowerCase();
+                letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+                especiales = [8, 37, 39, 46];
             
+                tecla_especial = false
+                for(var i in especiales) {
+                    if(key == especiales[i]) {
+                        tecla_especial = true;
+                        break;
+                    }
+                }
+            
+                if(letras.indexOf(tecla) == -1 && !tecla_especial)
+                    return false;
+            }
+            
+            function limpia() {
+                var val = document.getElementById("miInput").value;
+                var tam = val.length;
+                for(i = 0; i < tam; i++) {
+                    if(!isNaN(val[i]))
+                        document.getElementById("miInput").value = '';
+                }
+            }
+            </script>
         </section>
     </main>
 </body>

@@ -61,8 +61,8 @@
             <main>
                 <section class="registrar">
                     <h4>Formulario</h4>
-                    <input class="controls" type="text" name="" id="nombre" placeholder="ingrese su nombre">
-                    <input class="controls"  type="text" name="" id="apellido" placeholder="ingrese su apellido">
+                    <input class="controls" type="text" onkeypress="return soloLetras(event)" onblur="limpia()" id="miInput" placeholder="Ingresa tu nombre">
+                    <input class="controls" type="text" onkeypress="return soloLetras(event)" onblur="limpia()" id="miInput" placeholder="Ingresa tu apellido">
                     <input class="controls"  type="mail" name="" id="correo" placeholder="ingrese su correo">
                     <input class="controls"  type="password" name="" id="contraseña" placeholder="ingrese su contraseña">
                     <p>Estoy de acuerdo con<a href="#">Terminos y condiciones</a></p>
@@ -73,16 +73,73 @@
             
         </form>
         <div class="lado" id="error"></div>
-        <script src="../js/javalida.js"> </script>
+        
+        <script>
+            function soloLetras(e) {
+                key = e.keyCode || e.which;
+                tecla = String.fromCharCode(key).toLowerCase();
+                letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+                especiales = [8, 37, 39, 46];
+            
+                tecla_especial = false
+                for(var i in especiales) {
+                    if(key == especiales[i]) {
+                        tecla_especial = true;
+                        break;
+                    }
+                }
+            
+                if(letras.indexOf(tecla) == -1 && !tecla_especial)
+                    return false;
+            }
+            
+            function limpia() {
+                var val = document.getElementById("miInput").value;
+                var tam = val.length;
+                for(i = 0; i < tam; i++) {
+                    if(!isNaN(val[i]))
+                        document.getElementById("miInput").value = '';
+                }
+            }
+            var nombre=document.getElementById("miInput");
+var apellido=document.getElementById("miInput");
+var correo=document.getElementById("correo");
+var contraseña=document.getElementById("contraseña");
+var error=document.getElementById("error");
+error.style.color="cyan";
+error.style.fontSize="20px";
+error.style.fontFamily="Algerian";
+function enviarformulario()
+{
+    console.log("enviando formulario...");
+    
+    var mensajesError=[];
+    if(nombre.value===null||nombre.value=== ""||!isNaN(nombre.value))//isNaN(nombre) || nombre.value="(/*)) ("(/*))")";
+    {
+    mensajesError.push("ingresa tu nombre, no se admiten numeros");
+    }
+    if(apellido.value===null|| apellido.value=== "" ||!isNaN(apellido.value))
+    {
+    mensajesError.push("ingresa tu apellido,no se admiten numeros");
+    }
+    if(correo.value===null|| correo.value=== "")
+    {
+    mensajesError.push("ingresa tu correo");
+    }
+    if(contraseña.value===null|| contraseña.value=== "")
+    {
+    mensajesError.push("ingresa tu contraseña");
+    }
+
+    error.innerHTML=mensajesError.join(", ");
+    return false;
+}
+           
+            </script>
         </section>
         
     </main>
-   <script>
-      var name;
-      do{
-      name = prompt("Introduce un nombre válido: ", "Coloca aquí tu nombre");
-      }while(!isNaN(name)); 
-   </script>
+  
         
 </body>
 
