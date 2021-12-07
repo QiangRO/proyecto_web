@@ -1,18 +1,4 @@
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -245,50 +231,3 @@ div.paquetes .tabla-precio input {
     font-size: 12px;
 }
 
-/* Resumen Registro */
-
-div.resumen p {
-  font-size: 1.2em;
-  text-transform: uppercase;
-}
-
-div.resumen div.extras {
-  float: left;
-  width: 50%;
-  padding: 30px;
-}
-div.extras div.orden {
-    text-align: left;
-    margin-bottom: 10px;
-}
-div.extras div.orden input {
-  margin: 10px 0 0 0 ;    
-}
-div.resumen div.total {
-  float: right;
-  width: 50%;
-  padding: 30px;
-}
-div.resumen input {
-    display: block;
-    margin: 10px auto;
-}
-#lista-productos {
-  background-color: #e1e1e1;
-  padding: 20px;
-  display: none;
-}
-#suma-total {
-  text-align: center;
-  font-size: 2em;
-  color: #fe4918;
-}
-input[disabled].button {
-  opacity: .5;
-}
-#error {
-  clear: both;
-  padding: 20px;
-  text-align: center;
-  display: none;
-}

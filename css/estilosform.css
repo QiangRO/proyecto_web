@@ -55,7 +55,7 @@
 body/*imagen de fondo*/
 {
     background-image:url(../img_body/fondoh.jpg) ;
-    height: 1000px;
+    height: auto;
     background-size: cover;
     background-repeat: no-repeat;
 }

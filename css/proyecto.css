@@ -17,8 +17,9 @@ body {
     overflow-y: scroll;
 }
 main{
-    background: #ffffff;
+    background: #ddeefc;
 }
+
 body::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
@@ -28,19 +29,17 @@ header {
     background-color: rgb(32, 44, 58);
     height: auto;
 }
-.carrusel{
-    width: 100%;
-    height: auto;
-}
 .banner-text{
     background: rgba(168, 15, 120, 0.842);
-    position: absolute;
     padding: 20px;
-    text-align: center;
     color: #fff;
-    margin-top: 10em;
-    margin-left: 30%;
-    z-index: 90;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 30%;
+    left: 35%;
+    z-index: 45;
+    text-align: center
 }
 .banner-text h1 {
     font-size: 50px;
@@ -125,7 +124,7 @@ header {
 .container{
     width: 90%;
     max-width: 1200px;
-    margin: auto;
+    margin-top: 20px;
 }
 .bar-btn{
     font-size: 25px;
@@ -481,6 +480,7 @@ p{
     grid-template-areas: "img1 img2 img3 img4"
     "img5 img6 img7 img8 ";
     gap: 5px;
+    z-index: 90;
 }
 .img{
     width: 100%;
@@ -515,6 +515,7 @@ p{
     justify-content: center;
     align-items: center;
     transition: transform .4s ease-in;
+    z-index: 1000;
 }
 .move{
     transform: translateX(0%);
@@ -647,6 +648,7 @@ p{
     display: block;
     object-fit: cover;
     transition: transform .2s .2s ;
+    z-index: 1000;
 }
 
 .show{
@@ -724,7 +726,7 @@ footer/*colores */
 }
 .row
 {
-    display: flex;
+    position: sticky;
 }
 .row label
 {
