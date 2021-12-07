@@ -2,18 +2,21 @@
     margin: 0;
     padding: 0;
 }
-
 .image-container {
     height: 100px;
     text-align: center;
 }
-
 .image-container img {
     width: 100px;
 }
+#hidden{
+    display: none;
+}
 
-#hidden{display: none;}
-
+canvas{
+    height: 500px;
+    float: right ;
+}
 .file-container {
     padding: 3px;
     border-top: 2px solid black;

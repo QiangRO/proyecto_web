@@ -1,28 +1,31 @@
 <html>
-    <head>
-        <title> Cambia tu imagen con canvas </title>
-        <link rel="stylesheet" href="../css/canvas.css" />
-        <style>
-            input
-            {
-                color: #D77A5B;
-                background-color:#a80f78;;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="image-container">
-            <img id="diamond" src="../shapes/diamond.png">
-            <img id="moon" src="../shapes/moon.png">
-            <img id="heart" src="../shapes/heart.png">
-            <img id="donut" src="../shapes/donut.png">
-        </div>
-        <div class="file-container">
-            <input type="file" id="file"/>
-        </div>
-        <img id="hidden" />
-        <canvas id="canvas"></canvas>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="../java/index.js"></script>
-    </body>
+
+<head>
+    <title> Cambia tu imagen con canvas </title>
+    <link rel="stylesheet" href="../css/canvas.css" />
+    <style>
+        input {
+            color: #D77A5B;
+            background-color: #a80f78;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img id="diamond" src="../shapes/diamond.png">
+        <img id="moon" src="../shapes/moon.png">
+        <img id="heart" src="../shapes/heart.png">
+        <img id="donut" src="../shapes/donut.png">
+    </div>
+    <div class="file-container">
+        <input type="file" id="file" />
+    </div>
+    <img id="hidden" class="tamanoimg" />
+    <canvas id="canvas"></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/canvas.js"></script>
+</body>
+
 </html>

@@ -26,33 +26,6 @@ let universidades = [
         phone: "22441044",
         page: "../html/indexudabol.html",
     },
-    // // INFORMACION UNIVALLE
-    // {
-    //     name:"Universidad Privada del Valle",
-    //     lat: -16.503002849111695,
-    //     lng: -68.11989629934646,
-    //     address: "Av. Argentina Nº 2083, La Paz",
-    //     phone: "22001800",
-    //     page: "../html/indexunivalle.html",
-    // },
-    // // INFORMACION UPB
-    // {
-    //     name:"Universidad Privada Boliviana",
-    //     lat: -16.5751767493436,
-    //     lng: -68.12706346716693,
-    //     address: "Mallasa - Achocallla, Km 3 5, La Paz",
-    //     phone: "2 2165700",
-    //     page: "../html/indexupb.html",
-    // },
-    // // INFORMACION UNIFRANZ
-    // {
-    //     name:"Universidad Privada Franz Tamayo",
-    //     lat: -16.505836870991633,
-    //     lng: -68.13272259372063,
-    //     address: "Landaeta, La Paz",
-    //     phone: "22487700",
-    //     page: "../html/indexunifranz.html",
-    // },
 ]
 // function iniciarMap() {
 //     // PRIMER PUNTO EMI
