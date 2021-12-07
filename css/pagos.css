@@ -1,14 +1,3 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-body {
-	background: #ddeefc;
-	font-family: 'Lato', sans-serif;
-}
-
 .contenedor {
 	width: 90%;
 	max-width: 1000px;

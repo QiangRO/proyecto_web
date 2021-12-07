@@ -48,6 +48,16 @@ header {
 #letradorada{
     color: #efb810;
 }
+#centrar-boton{
+    color: #fff;
+    text-decoration: none;
+    background: #870867;
+}
+.estilo-boton{
+    text-decoration: none;
+    color: white;
+    cursor: ns-resize;
+}
 /**-->HEADER**/
 
 /**BARRA DE NAVEGACION**/
