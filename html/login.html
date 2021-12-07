@@ -25,22 +25,22 @@
 
         <section class="registrar">
             <h4>Login</h4>
-            <input type="text" id="valor" placeholder="Nombre de usuario" onblur="minhaFuncao()" class="controls">
+            <input type="text" id="nombre" placeholder="Nombre de usuario" onblur="minhaFuncao()" class="controls">
             <div id="resultado"></div>
 
-            <input id="text"  class="controls" type="mail" name=""  placeholder="ingrese su correo">
+            <input id="correo"  class="controls" type="mail" name=""  placeholder="ingrese su correo">
             <div id="result" style="display: none;">usted apreto la tecla enter</div>
             
             <input class="controls" type="password" name="" id="contraseña" placeholder="Ingrese su contraseña">
             <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
-            <input class="boton" type="submit" value="Iniciar sesión ahora">
+            <button id="btnadd" name="enviar">INICIAR SESION AHORA</button>
             
         </section>
 
         <script>
-            document.getElementById('valor').focus();
+            document.getElementById('nombre').focus();
             function minhaFuncao(){
-                var valor = document.getElementById('valor').value;
+                var valor = document.getElementById('nombre').value;
     
                 if(valor){
                     document.getElementById('resultado').innerHTML=valor;
@@ -51,7 +51,7 @@
             }
     
             /**/
-            var text = document.getElementById("text");
+            var text = document.getElementById("correo");
             var result = document.getElementById("result");
     
             const TECLAENTER = 13;
@@ -59,6 +59,30 @@
                 if(evento.keyCode == TECLAENTER)
                 result.style.display="block";
             })
+
+            /**/
+            class Persona{
+        constructor(_nombre, _correo, _contraseña){
+        this.nombre =_nombre
+        this.correo =_correo
+        this.contraseña =_contraseña
+    }
+   }
+
+   const nombre = document.querySelector(selectors='#nombre')
+   const correo = document.querySelector(selectors='#correo')
+   const contraseña = document.querySelector(selectors='#contraseña')
+   const btnadd = document.querySelector(selectors='#btnadd')
+
+   btnadd.addEventListener(type='click', listener=()=>{
+       const persona = new Persona(nombre.value, correo.value, contraseña.value)
+       addlocal(persona)
+   })
+
+   const addlocal=(persona =>{
+       localStorage.setItem('persona', JSON.stringify(persona))
+   })
+
         </script>
     </main>
 </body>

@@ -301,6 +301,13 @@ input[type="submit"]{
 /**-->FORMULARIO DE CONTACTO**/
 /**-->ALEJANDRO**/
 /**PAOLA**/
+button{
+    background: rgb(141, 49, 110);
+    color: orange;
+    padding: 5px 10px;
+    border: 1px solid #086A87;
+    border-radius: 60px; 
+}
 a:visited {
     color:orange; /*para marcar sitios visitados*/
 }
