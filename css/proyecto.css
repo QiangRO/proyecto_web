@@ -77,7 +77,7 @@ header {
 	transition: .3s ease-out all;
 }
 .navbar a:hover {
-	color: #fff;
+	color: rgb(239, 184, 16);
 	text-decoration: none;
 }
 .contenedor-nav {
@@ -93,7 +93,6 @@ header {
     position: relative;
     display: inline-block;
     padding: 15px 30px;
-    color: #fff;
     letter-spacing: 4px;
     font-size: 15px;
     text-decoration: none;
@@ -104,6 +103,7 @@ header {
     background: rgb(215, 122, 91);
     box-shadow: 0 0 10px rgb(215, 122, 91), 0 0 40px rgb(215, 122, 91), 0 0 80px rgb(215, 122, 91);
     /*transition-delay: 1s;   /**borrame**/
+    color: #086A87;
 }
     
 .btn-neon span {
@@ -319,21 +319,15 @@ button{
     border: 1px solid #086A87;
     border-radius: 60px; 
 }
-a:visited {
-    color:orange; /*para marcar sitios visitados*/
-}
-/* p:nth-child(odd){  
-    color: white;
-} */
-/* p:first-child{  
-    color: rgb(5, 5, 5);
+/* a:visited {
+    color:orange;
 } */
 .centrar{
     width: 80%;
-    height: auto; /*alto*/
+    height: auto;
     overflow: hidden;
     border: 0px solid ;
-    margin: auto;/*para centrar*/
+    margin: auto;
 }
 .contenedor-sobre-nosotros{
     display: flex;

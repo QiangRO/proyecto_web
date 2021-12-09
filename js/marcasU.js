@@ -63,7 +63,7 @@ function initMap() {
     let lapaz = { lat: -16.508984257887636, lng: -68.12424660269954 }
     map = new google.maps.Map(document.getElementById("map"), {
         center: lapaz,
-        zoom: 14,
+        zoom: 20,
         mapId:"3792af100ec9ffce",
     });
     createLocationMarkers();

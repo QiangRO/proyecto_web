@@ -1,5 +1,5 @@
 let universidades = [
-    // INFORMACION EMI
+
     {
         name:"Teatro san Gabriel",
         lat: -16.5255,
@@ -8,24 +8,24 @@ let universidades = [
         phone: "2775536 - 2799505",
         page: "../html/indexemi.html",
     },
-    // INFORMACION UMSA
-    {
-        name:"Camara de comercio",
-        lat: -16.5000329,
-        lng: -68.134289,
-        address: "J.J.Perez, La Paz",
-        phone: "22441963",
-        page: "../html/indexumsa.html",
-    },
-    // INFORMACION UDABOL
-    {
-        name:"Unidad Educativa Republica de Francia",
-        lat: -16.484778869939035,
-        lng: -68.14470417047283,
-        address: "Capitán Ravelo, La Paz",
-        phone: "22441044",
-        page: "../html/indexudabol.html",
-    },
+
+    // {
+    //     name:"Camara de comercio",
+    //     lat: -16.5000329,
+    //     lng: -68.134289,
+    //     address: "J.J.Perez, La Paz",
+    //     phone: "22441963",
+    //     page: "../html/indexumsa.html",
+    // },
+
+    // {
+    //     name:"Unidad Educativa Republica de Francia",
+    //     lat: -16.484778869939035,
+    //     lng: -68.14470417047283,
+    //     address: "Capitán Ravelo, La Paz",
+    //     phone: "22441044",
+    //     page: "../html/indexudabol.html",
+    // },
 ]
 // function iniciarMap() {
 //     // PRIMER PUNTO EMI
